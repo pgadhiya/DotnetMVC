@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar-sticky{
+  background-color: #000;
+}
+.navbar-sticky a{
+  color: #fff;
+}
+.navbar-sticky ul li.active a{
+  color: #ED2024;
+}
+.navbar-toggler-icon.lines span{
+  height: 6px;
+  width: 100%;
+  background-color: #ffffff !important;
+  display: block;
+  margin-bottom: 5px;
+}
+.navbar-toggler{
+border: 2px solid #ffffff;
+}
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}
+.modulemainblock{
+  padding: 15px;
+}
+.modulemainheader{
+  background-color: #c17211;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.modulemainheader h1{
+  color: #fff;
+}
+.module1Cprogramacc .card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a6ca3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;  
+}
+.module1Cprogramacc .card-header h5{
+  color: #fff;
+  font-size: 16px;
+}
+.module1Cprogramacc .card-header button{
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  outline: none;
+  box-shadow: none;
+}
+.module1Cprogramacc .card-header button span{
+  font-size: 35px;
+    line-height: 0;
+    display: inline-block;    
+    position: absolute;
+    transform: rotate(270deg);
+    left: 18%;
+    top: 57%;
+    transition: 0.5s ease all;
+}
+.module1Cprogramacc .card-header button.btn-link.collapsed span{
+  transform: rotate(175deg);
+  left: 33%;
+    top: 66%;
+}
+.module1Cprogramacc .card{
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  page-break-inside: avoid;
+}
+.writtencode{
+  border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.pagetoppag{
+  padding-top: 56px;
+}
+.gotoTopo{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+}
+.gotoTopo a{
+  padding: 14px 8px 16px 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a6ca3;
+    line-height: 0;
+    font-size: 26px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s ease all;
+}
+.gotoTopo a:hover{
+  background-color: #c17211;
+}
+.modulemainheader p{
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.assignmentsubheader h3{
+  text-align: center;
+  font-size: 16px;
+}
+.writtencode table{
+  width: 100%;
+}
+.writtencode table thead tr th{
+  text-align: center;
+}
+.writtencode table tbody tr td{
+  border: 1px solid #000;
+  padding: 10px;
+}
+@media (max-width: 991px){
+  .navbar-collapse{
+    background-color: #ffffff;
+    margin-top: 15px;
+  }
+  .navbar-sticky ul li{
+    padding-left: 10px;    
+  }
+  .navbar-sticky ul li a{
+    color: #000;
+  }
+}
+
+
+
+
+/*=======================/Custom Scroll Bar===========================*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*=======================//Custom Scroll Bar===========================*/
+@media print{
+  .module1Cprogramacc .card-header{
+    background-color: #1a6ca3;
+    -webkit-print-color-adjust: exact;
+  }
+}

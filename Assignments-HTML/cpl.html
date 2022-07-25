@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C++ Assignments</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="gotoTopo">
+	<a href="#home">&#x21e7;</a>
+</div>
+
+	<section>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-sticky">
+		  <a class="navbar-brand" href="index.html">Tops Assignments</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon lines">
+		    	<span></span>
+		    	<span></span>
+		    	<span></span>
+		    </span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item ">
+		        <a class="nav-link" href="index.html">C Programme <span class="sr-only">(current)</span></a>
+		      </li>	 
+		      <li class="nav-item active">
+		        <a class="nav-link" href="cpl.html">C++ Programme <span class="sr-only">(current)</span></a>
+		      </li>	
+		      <li class="nav-item">
+		        <a class="nav-link" href="mvc_net.html">.Net MVC <span class="sr-only">(current)</span></a>
+		      </li>	
+		      <li class="nav-item">
+		        <a class="nav-link" href="Data-Table-Desription.html">Data-Table-Desription <span class="sr-only">(current)</span></a>
+		      </li>	     
+		    </ul>
+		  </div>
+		</nav>
+	</section>
+<section class="pagetoppag" id="home">
+	<div class="container">	
+		<div class="modulemainblock">
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="modulemainheader">
+						<h1 class="mb-0">Module - 2 [C++ Programming ]</h1>
+					</div>
+					
+				</div>
+				<div class="col-12">
+					<div id="accordion" class="module1Cprogramacc">
+					  <div class="card">
+					    <div class="card-header" id="heading1">
+					    	<h5 class="mb-0">1) Write a program of Fibonacci and factorial using Class</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member
+	int a=0,b=1,c=0,n,e,fact;
+	
+	public:
+	//Member function
+	int get_data(){
+		cout << "\nEnter the number: ";
+		cin >> n;
+	}	
+	int fibonacci_fun(){
+    cout << "Fibonacci Series: ";
+
+    for (int i = 1; i <= n; ++i) {
+    	        if(i == 1) {
+	            cout << a << ", ";
+	            continue;
+	        }
+	        if(i == 2) {
+	            cout << b << ", ";
+	            continue;
+	        }
+	        c = a + b;
+	        a = b;
+	        b = c;	        
+	        cout << c << ", ";
+	    }
+	}
+	int factorial_fun(){
+		fact=e=1;
+		for(e;e<=n;e++){
+			fact = fact * e;
+		}
+		cout << "factorial is: " << fact;
+	}
+	
+};
+
+int main() {
+  	myClass obj1,obj2;
+  	obj1.get_data(); 
+ 	obj1.fibonacci_fun(); 
+ 	
+ 	obj2.get_data();
+ 	obj2.factorial_fun();
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.1.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading2">
+					    	<h5 class="mb-0">2) Write a program to Addition, Subtraction, Multiplication, and Division of two numbers using Class</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member
+	int a=0,b=1,n1,n2,result;
+	
+	public:
+	//Member function
+	int get_data(){
+		cout << "\nEnter the value of n1: ";
+		cin >> n1;
+		cout << "\nEnter the value of n2: ";
+		cin >> n2;
+	}	
+	int addition_fun(){
+		result = n1 + n2;
+	}
+	int subtraction_fun(){
+		result = n1 - n2;
+	}
+	int multiplication_fun(){
+		result = n1 * n2;
+	}
+	int division_fun(){
+		result = n1 / n2;
+	}
+	int print_fun(){
+		cout&#x3c;&#x3c;result;
+	}
+	
+};
+
+int main() {
+  	myClass obj1;
+  	cout &#x3c;&#x3c; "\nAddition: ";
+  	obj1.get_data();
+  	obj1.addition_fun();
+  	obj1.print_fun();
+  	
+  	cout &#x3c;&#x3c; "\nSubstraction: ";
+  	obj1.get_data();
+  	obj1.subtraction_fun();
+  	obj1.print_fun();
+  	
+  	cout &#x3c;&#x3c; "\nmultiplication: ";
+  	obj1.get_data();
+  	obj1.multiplication_fun();
+  	obj1.print_fun();
+  	
+  	cout &#x3c;&#x3c; "\ndivision: ";
+  	obj1.get_data();
+  	obj1.division_fun();
+  	obj1.print_fun();
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.2.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading3">
+					    	<h5 class="mb-0">3) Write a program of to display a matrix using class</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member
+	int arr[3][3],i,j;
+	
+	public:
+	//Member function
+	int get_data(){
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				cout<<"enter the value of i and j: " ;
+				cin>> arr[i][j];
+			}
+		}
+	}	
+	int matrix_fun(){
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				cout<< " " &#x3c;&#x3c;arr[i][j];
+			}
+			cout&#x3c;&#x3c; "\n";
+		}
+	}
+};
+
+int main() {
+  	myClass obj1;
+  	
+  	obj1.get_data();
+  	obj1.matrix_fun();
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.3.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading4">
+					    	<h5 class="mb-0">4) Write a program of Addition of two Matrix using Class.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member
+	int arr1[3][3],arr2[3][3],sumarr[3][3],i,j,n;	
+	
+	public:
+	//Member function
+	
+	int get_data(){
+		cout<<"enter the value of n for column and row: " ;
+	cin>> n;
+		for(i=0;i&#x3c;n;i++){
+			for(j=0;j&#x3c;n;j++){
+				cout&#x3c;&#x3c;"enter the value of i and j for first: " ;
+				cin>> arr1[i][j];
+			}
+		}
+		cout<< "\n";
+		for(i=0;i&#x3c;n;i++){
+			for(j=0;j&#x3c;n;j++){
+				cout<<"enter the value of i and j for second: " ;
+				cin>> arr2[i][j];
+			}
+		}
+	}	
+	int matrix_fun(){
+		for(i=0;i&#x3c;n;i++){
+			for(j=0;j&#x3c;n;j++){
+				cout&#x3c;&#x3c; " " &#x3c;&#x3c;arr1[i][j];
+			}
+			cout<< "\n";
+		}
+		
+		cout&#x3c;&#x3c; "\n";
+		for(i=0;i&#x3c;n;i++){
+			for(j=0;j&#x3c;n;j++){
+				cout&#x3c;&#x3c; " " &#x3c;&#x3c;arr2[i][j];
+			}
+			cout&#x3c;&#x3c; "\n";
+		}
+		cout<< "\n";
+	}
+	sumofarr_fun(){
+		for(i=0;i&#x3c;n;i++){
+			for(j=0;j&#x3c;n;j++){
+				sumarr[i][j] = arr1[i][j] + arr2[i][j];
+				cout&#x3c;&#x3c; " " &#x3c;&#x3c;sumarr[i][j];
+			}
+			cout&#x3c;&#x3c; "\n";
+		}
+	}
+};
+
+int main() {
+  	myClass obj1;
+  	
+  	obj1.get_data();
+  	obj1.matrix_fun();
+	obj1.sumofarr_fun();  	
+  	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.4.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading5">
+					    	<h5 class="mb-0">5) Define a class to represent a bank account. Include the following members:<br>
+					    		Data Member: -Name of the depositor -Account Number -Type of Account -Balance amount in the account<br>
+					    	Member Functions -To assign values -To deposited an amount -To withdraw an amount after checking balance -To display name and balance</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member
+	int acc_no,balance,n,amount,deposite,withdraw,dw;	
+	char name[50], actype[10];
+	
+	public:
+	//Member function
+	
+	int get_data(){
+		cout<< "Enter A/C holder name: ";
+		cin>> name;
+		cout<< "\nEnter A/C No: ";
+		cin>> acc_no;
+		cout<< "\nEnter A/C type: ";
+		cin>> actype;
+		balance = 100;	
+		
+	}
+	
+	int depositwith_fun(){
+		cout<< "\n\nEnter 1 for deposite 0 for withdraw: ";
+		cin>> dw;		
+		if(dw == 1){			
+			cout<< "Enter amount to deposite: ";
+			cin>> amount;
+			deposite = balance + amount;
+			cout<< "\nDeposite of amount " << amount <<" is successfull.";
+			cout<<"\nFinal Balance is: " &#x3c;&#x3c;deposite;
+		}else if(dw == 0){
+			cout<< "Enter amount to withdraw: ";
+			cin>> amount;
+			
+			if(amount < balance){
+				withdraw = balance - amount;
+				cout<< "\nWithdrawal of amount " << amount <<" is successfull.";
+				cout<<"\nFinal Balance is: " &#x3c;&#x3c;withdraw;
+			}else{
+				cout<<"Insufficient Balance ";
+			}			
+					
+		}	
+
+	}
+	print_data(){
+		cout<< "\nPrinted data: \n";
+		cout<<"Name: " << name <<"\n";
+		cout<<"A/C no: " << acc_no <<"\n";
+		cout<<"A/C Type: " << actype <<"\n";
+		cout<<"Previous Balance: " &#x3c;&#x3c;balance;
+	}	
+	
+};
+
+int main() {
+  	myClass obj1;
+  	
+   	obj1.get_data();
+   	obj1.print_data();
+   	obj1.depositwith_fun();
+  	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.5.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading6">
+					    	<h5 class="mb-0">6) Define a class to represent a book shop Include the following members<br>
+					    		Data Member: -Name of Author -Name of Title -Name of Price -Name Publisher in the account<br>
+					    	Member Functions -To Assign Values -To Display Values</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member
+	int price;	
+	char author[50], title[50], publisher[50];
+	
+	public:
+	//Member function
+	
+	int get_data(){
+		cout<< "\nEnter Author name: ";	
+		cin>>author;
+		cout<< "\nEnter Title: ";	
+		cin>>title;
+		cout<< "\nEnter Publisher name: ";	
+		cin>>publisher;
+		cout<< "\nEnter Price: ";	
+		cin>>price;
+		
+	}
+	
+	
+	print_data(){
+		cout<< "\nPrinted data: \n";
+		cout<< "\nAuthor name: " &#x3c;&#x3c;author;
+		cout<< "\nTitle: "&#x3c;&#x3c;title;	
+		cout<< "\nPublisher name: "&#x3c;&#x3c;publisher;
+		cout<< "\nPrice: "&#x3c;&#x3c;price;
+	}	
+	
+};
+
+int main() {
+  	myClass obj1;
+  	
+   	obj1.get_data();
+   	obj1.print_data();
+  	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.6.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading7">
+					    	<h5 class="mb-0">7) Define a class to represent lecture details. Include the following members and the program should handle at lest details of 5 lecturer.<br>Data Member: -Name of the lecturer -Name of the subject -Name of course -Number of lecturers<br>Member Functions -To assign initial values -To add a lecture details -To display name and lecture details</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member	
+	int n,i;
+	string lecturer[50], subject[50], course[50];
+	
+	public:
+	//Member function
+	
+	int get_data(){
+		cout<< "Enter No of lecture: ";
+		cin>>n;
+		for(i=1;i<=n;i++){
+			cout<< "Lecture "<< i <<" Detail:\n";	
+			cout<< "Lecturer name: ";
+			cin>>lecturer[i];
+			cout<< "Subject name: ";
+			cin>>subject[i];
+			cout<< "Course name: ";
+			cin>>course[i];
+			cout<< "\n\n";
+		}		
+	}
+	
+	
+	print_data(){
+		cout<< "\nPrinted data: \n";
+		for(i=1;i<=n;i++){
+			cout<< "Lecture "<< i <<" Detail:\n";	
+			cout<< "\nName: " << lecturer[i];
+			cout<< "\nSubject: " &#x3c;subject[i];
+			cout<< "\nCourse: "&#x3c;course[i];
+			cout<< "\n\n";
+		}
+	}	
+	
+};
+
+int main() {
+  	myClass obj1;
+  	
+   	obj1.get_data();
+   	obj1.print_data();
+  	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.7.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading8">
+					    	<h5 class="mb-0">8) Write a program of to display in this format using class<br>Data Member: -Roll No -Sub1 -Sub2 -Sub3 -Total -Percentage</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myClass{
+	private:
+	//Data member	
+	int n,s,i,j,rollno[100],marks[100][100],sum,outof;	
+	float percent;
+	
+	public:
+	//Member function
+	
+	int get_data(){
+		cout<<"Enter no of student: ";
+		cin>>n;
+		cout<<"\nEnter no of Subjects: ";
+		cin>>s;
+		outof = s*100;
+		for(i=1;i<=n;i++){
+			cout<<"Roll no: ";	
+			cin>>rollno[i];
+			for(j=1;j<=s;j++){
+				cout<<"Sub"&#x3c;&#x3c;j<<" Marks: ";	
+				cin>>marks[i][j];
+			}						
+		}	
+	}	
+	
+	print_data(){
+		cout<<"Roll No";
+		for(j=1;j<=s;j++){
+			cout<<"\tSub" &#x3c;&#x3c;j;
+		}
+		cout<<"\tTotal";
+		cout<<"\tPercent";
+		cout<<"\n";
+		for(i=1;i<=n;i++){
+			cout&#x3c;&#x3c;rollno[i];
+			for(j=1;j<=s;j++){
+				cout<<"\t"<< marks[i][j];	
+			}
+			for(j=1;j<=s;j++){
+				sum = sum + marks[i][j];
+			}	
+			cout<<"\t"<< sum;
+			
+			percent = (sum * 100)/outof;	
+			cout<<"\t"<< percent;
+			
+			sum=0;
+			percent=0;
+						
+			cout<<"\n";
+		}
+		
+	}	
+	
+};
+
+int main() {
+  	myClass obj1;
+  	//cout<< "Roll No: ";
+   	obj1.get_data();
+   	obj1.print_data();
+  	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.8.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading9">
+					    	<h5 class="mb-0">9) Write a program of Addition, Subtraction, Division, Multiplication using constructor</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myConstructor{
+	public:
+		int a,b,n,result;
+	public:
+		myConstructor(){
+			cout<<"Enter the 1 For Addition, 2 For Subtraction, 3 For Division, 4 For Multiplication: ";
+			cin>>n;			
+			
+			
+			if(n<=4 && n>0){
+				cout<<"Enter the value of a: ";
+				cin>>a;
+				
+				cout<<"Enter the value of b: ";
+				cin>>b;
+				if(n==1){
+				result= a+b;
+				cout<<"Sum of "<< a << " and " << b <<" is: ";
+				}else if(n==2){
+					result= a-b;
+					cout<<"Subtraction of "<< a << " and " << b <<" is: ";
+				}
+				else if(n==3){
+					result= a/b;
+					cout<<"Division of "<< a << " and " << b <<" is: ";
+				}else if(n==4){
+					result= a*b;
+					cout<<"Multiplication of "<< a << " and " << b <<" is: ";
+				}
+			}else{
+				cout<<"Choose options as mention above.";
+			}			
+		}
+		print_data(){
+			if(n<=4 && n>0){
+				cout<< result;	
+			}			
+		}
+};
+ main(){
+	myConstructor obj1;
+	obj1.print_data();
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.9.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading10">
+					    	<h5 class="mb-0">10) Write a program of find the simple interest using constructor with dynamic initialization. Make constructor like Interest (int principal, int year, int rate), <br>Interest (int principal, int year, float rate = 2.5)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class Interest{
+	public:
+	float interest1,finalamt1;
+	public:
+		Interest(float principal, float year, float rate){
+			cout<<"\n\nEnter the principal amount:  ";
+			cin>>principal;	
+			
+			cout<<"Enter the year:  ";
+			cin>>year;	
+			
+			cout<<"Enter the rate:  ";
+			cin>>rate;	
+			
+			interest1 = (principal * year * rate)/100;
+			finalamt1 = principal + interest1;						
+		}
+		print_data(){
+			cout<<"Total interest is:  " &#x3c;&#x3c;interest1;
+			cout<<"\nFinal Amount is: " &#x3c;&#x3c;finalamt1;			
+		}
+};
+ main(){
+	Interest obj1(0, 0, 0);
+	obj1.print_data();
+	cout<<"\n";
+	Interest obj2(0, 0, 0);
+	obj2.print_data();
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.10.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading11">
+					    	<h5 class="mb-0">11) Write a program to calculate the area of circle, rectangle and triangle using Function Overloading</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class area{
+	public:
+			int findarea(int x, float z){
+				return z*x*x;
+			}
+			int findarea(int x,int y){
+				return x*y;
+			}
+			int findarea(float z, int x,int y){
+				return z*x*y;
+			}
+};
+main(){
+	int x,y;
+	cout<<"Enter width/radius: " ;
+			cin>>x;
+			cout<<"Enter height: " ;
+			cin>>y;
+	area obj;
+	cout<<"\nArea of Cicle: " &#x3c;&#x3c;obj.findarea(x,float(3.14));
+	cout<<"\nArea of Rectangle: " &#x3c;&#x3c;obj.findarea(x,y);
+	cout<<"\nArea of Triangle: " &#x3c;&#x3c;obj.findarea(float(0.5),x,y);
+	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.11.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading12">
+					    	<h5 class="mb-0">12) Write a program to find the multiplication values and the cubic values using inline function.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class inline_func{
+   public:
+              inline float mul(float x,float y)
+              {
+                            return(x*y);
+              }
+              inline float cube(float x)
+              {
+                            return(x*x*x);
+              }
+};
+
+int main(){
+              inline_func obj;
+              float val1,val2;
+
+              cout<<"\nEnter 1st value: ";
+              cin>>val1;
+              cout<<"\nEnter 2nd value: ";
+              cin>>val2;
+              cout<<"\nMultiplication value of "<< val1 <<" and "<< val2 <<" is: "<< obj.mul(val1,val2);
+              cout<<"\n\nCube value of " << val1 <<" is: " << obj.cube(val1)<< " and " << val2 << " is : "<< obj.cube(val2)<<"\n";
+
+              return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.12.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading13">
+					    	<h5 class="mb-0">13) Write a program to Mathematic operation like Addition, Subtraction, Multiplication, Division Of two number using different parameters and Function Overloading</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class maths{
+	public:
+			int mathoperation(int x,int y,int z){
+				return x+y;
+			}
+			int mathoperation(int x,int y){
+				return x-y;
+			}
+			int mathoperation(float x, int y){
+				return x*y;
+			}
+			int mathoperation(int z,float y){
+				return z/y;
+			}
+};
+main(){
+	int x,y,z;
+			cout<<"Enter Value of X: " ;
+			cin>>x;
+			cout<<"Enter Value of Y: " ;
+			cin>>y;
+			cout<<"Enter Value of Z: " ;
+			cin>>z;
+	maths obj;
+	cout<<"\nAddition: " &#x3c;&#x3c;obj.mathoperation(x,y,z);
+	cout<<"\nSubtraction: " &#x3c;&#x3c;obj.mathoperation(x,y);
+	cout<<"\nMultiplication: " &#x3c;&#x3c;obj.mathoperation(float (x),y);
+	cout<<"\nDivision: " &#x3c;&#x3c;obj.mathoperation(z,float (y));
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.13.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading14">
+					    	<h5 class="mb-0">14) Write a Program of Two 1D Matrix Addition using Operator Overloading</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+int n;
+class matrix{        
+    public:
+    	int a[50][50],mat[50][50],i,j;
+        void matrixval();
+        void showmatrix();
+        void operator +(matrix x);
+};
+void matrix::matrixval(){
+        for(i=1; i<=n; i++){
+                for(j=1; j<=n; j++){
+                        cout<<"Enter value of i and j: ";
+                        cin>>a[i][j];
+                        cout<<"\n";
+                }
+        }
+}
+void matrix::showmatrix(){		
+        for(i=1; i<=n; i++){
+                cout<<" ";
+                for(j=1; j<=n; j++){
+                        cout&#x3c;&#x3c;a[i][j]<<"\t";
+                }
+                cout<<"\n";
+        }
+}
+void matrix::operator +(matrix x){
+        for(i=1; i<=n; i++){
+                for(int j=1; j<=n; j++){
+                        mat[i][j]=a[i][j]+x.a[i][j];
+                }
+        }
+        cout<<"\n Addition of Matrix : \n\n";
+        for(i=1; i<=n; i++){
+                cout<<" ";
+                for(j=1; j<=n; j++){
+                        cout&#x3c;&#x3c;mat[i][j]<<"\t";
+                }
+                cout<<"\n";
+        }
+}
+int main(){		
+        matrix m1,m2;
+        cout<<"\nEnter no of Matrix Element: ";
+        cin>>n;
+        cout<<"\nFirst Matrix Values: \n\n";
+        m1.matrixval();       // First matrix value
+        cout<<"\nSecond Matrix Values: \n\n";
+        m2.matrixval();      // Second matrix value
+        cout<<"\nFirst Matrix : \n\n";
+        m1.showmatrix();   // Displaying First Matrix
+        cout<<"\nSecond Matrix : \n\n";
+        m2.showmatrix(); // Displaying Second Matrix
+        m1+m2;        // Addition of Two Matrices. Overloaded '+' Operator
+        return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.14.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading15">
+					    	<h5 class="mb-0">15) Write a program of to concatenate the two strings using Operator Overloading</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class myString{        
+    public:
+    	string a,mat;
+        void strngval();
+        void showstrngval();
+        void operator +(myString x);
+};
+void myString::strngval(){
+                cin>>a;
+}
+void myString::showstrngval(){
+		cout&#x3c;&#x3c;a;	
+}
+void myString::operator +(myString x){
+        mat=a+x.a;
+        cout<<"\nAddition of String : ";
+		cout&#x3c;&#x3c;mat;
+}
+ main(){		
+        myString s1,s2;
+        cout<<"\nEnter First String: ";
+        s1.strngval();       // First string value
+        cout<<"\nEnter Second String: ";
+        s2.strngval();      // Second string value
+        cout<<"\nFirst String : ";
+        s1.showstrngval();   // Displaying First string
+        cout<<"\nSecond String : ";
+        s2.showstrngval(); // Displaying Second string
+        s1+s2;        // Addition of Two strings. Overloaded '+' Operator
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.15.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading16">
+					    	<h5 class="mb-0">16) Write a program of Addition, subtraction and multiplication of two numbers using Binary Operator overloading with switch case.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+int n,c=1;
+class matrix{        
+    public:
+    	int a,b,i;
+        void matrixval();
+        void showmatrix();
+        void operator +(matrix x);
+        void operator -(matrix x);
+        void operator *(matrix x);
+        void operator /(matrix x);
+};
+		void matrix::matrixval(){
+		    cin>>a; 	
+		}
+		void matrix::showmatrix(){		
+		    cout&#x3c;&#x3c;a;
+		}
+		void matrix::operator +(matrix x){  
+	        b=a+x.a;
+	        cout<<"\nAddition of a and b: ";                   
+	        cout&#x3c;&#x3c;b;
+		}
+		void matrix::operator -(matrix x){  
+	        b=a-x.a;
+	        cout<<"\nSubtraction of a and b: ";                   
+	        cout&#x3c;&#x3c;b;
+		}
+		void matrix::operator *(matrix x){  
+	        b=a*x.a;
+	        cout<<"\nMultiplication of a and b: ";                   
+	        cout&#x3c;&#x3c;b;
+		}
+		void matrix::operator /(matrix x){  
+	        b=a/x.a;
+	        cout<<"\nDivision of a and b: ";                   
+	        cout&#x3c;&#x3c;b;
+		}
+int main(){		
+        matrix m1,m2;
+        do{ 		
+			cout<<"\nEnetr the first value of a: ";
+	        m1.matrixval();       // First  value
+	        cout<<"\nEnetr the second value of a: ";
+	        m2.matrixval();      // Second  value
+	        cout<<"\nFirst value: ";
+	        m1.showmatrix();   // Displaying First value
+	        cout<<"\nSecond value: ";
+	        m2.showmatrix(); // Displaying Second value
+       
+	        cout<<"\nChoose options as below:"<<"\n1 for : Addition"<<"\n2 for : Subtraction"<<"\n3 for : Dultiplication"<<"\n4 for : Division"<<"\nEnter Choose option: ";//Choose option to operation
+	        cin>>n;
+	        switch (n){
+			case 1:
+				m1+m2;
+				break;
+			case 2:
+				m1-m2;
+				break;
+			case 3:
+				m1*m2;
+				break;
+			case 4:
+				m1/m2;
+				break;
+			default:
+				cout << "That's an invalid choice "; // Displays if you give an invalid choice
+			}  
+			
+			cout<<"\nEnetr 0 for exit 1 for continue: ";
+		    cin>>c; 
+			     }while(c!=0 && c==1);    
+	        return 0;
+        
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.16.1.png">
+					        <img class="img-fluid" src="images/cplus/Module-2.16.2.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading17">
+					    	<h5 class="mb-0">17) Assume a class cricketer is declared. Declare a derived class batsman from cricketer. Data member of batsman. Total runs, Average runs and best performance. Member functions input data, calculate average runs, Display data. (Single Inheritance)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class cricketer{
+	protected:
+		int i,j,n,run[500],total,maxnum;
+		float avg;
+		
+		string name[50],bestperform;
+	public:
+		void cricketer1(){
+			cout<<"\nEnter No of crickete:" ;
+			cin>>n;
+			for(i=1;i<=n;i++){
+				cout<<"\nEnter cricketer name:" ;
+				cin>>name[i];
+				cout<<"\nEnter Run:" ;
+				cin>>run[i];
+			}
+			
+		}
+};
+class batsman : public cricketer{
+	public:
+		void batsman1(){
+			for(i=1;i<=n;i++){
+				total= total+run[i];
+			}
+			avg = total/n;
+			maxnum = run[0];
+				for(i=0;i<=n;i++){
+					if(run[i] > maxnum){
+						maxnum = run[i];
+						bestperform = name[i];
+						
+					}
+					
+				}
+		}
+		void print(){
+			for(i=1;i<=n;i++){
+				cout<<"\nName: " << name[i] << "\t"<< run[i];	
+			}
+			cout<<"\nTotal: " << "\t"<< total;	
+			cout<<"\nAverage:" << avg;
+			cout<<"\nBest performance of " << bestperform << " with run: " << maxnum;		
+		}
+};
+ main(){
+	batsman objb;
+	objb.cricketer1();
+	objb.batsman1();
+	objb.print();
+	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.17.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading18">
+					    	<h5 class="mb-0">18) Create a class person having members name and age. Derive a class student having member percentage. Derive another class teacher having member salary. Write necessary member function to initialize, read and write data. Write also Main function (Multiple Inheritance)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse18">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+int i,n;
+class person{
+	public:
+		int age[50];		
+		string name[50];
+		
+	public:
+		void personfunc(){
+			cout<<"\nEnter No of Students:" ;
+			cin>>n;
+			cout<<"\nPerson class data" ;
+			for(i=1;i<=n;i++){
+				cout<<"\nEnter Name:" ;
+				cin>>name[i];
+				cout<<"\nEnter Age:" ;
+				cin>>age[i];
+			}
+			
+		}
+};
+class student{
+	protected:
+		float percentage[50];
+	public:
+	studentfunc(){
+		cout<<"\nStudent class data" ;
+		for(i=1;i<=n;i++){
+				cout<<"\nEnter Percentage:" ;
+				cin>>percentage[i];
+			}
+	}	
+};
+class teacher{
+	protected:
+		int salary[50];
+	public:
+	teacherfunc(){
+		cout<<"\nTeacher class data" ;
+		for(i=1;i<=n;i++){
+				cout<<"\nEnter Salary:" ;
+				cin>>salary[i];
+			}
+	}	
+};
+class finaldata : virtual public person, public student, public teacher{
+	public:		
+			
+		void print(){
+			cout<<"\nFinaldata class data" ;
+			cout<<"\nName" << "\t"<< "Age"<< "\t"<< "Percentage"<< "\t"<< "Salary" << "\n";	
+			for(i=1;i<=n;i++){
+				cout<< name[i] << "\t"<< age[i]<< "\t"<< percentage[i]<< "\t\t"<< salary[i] << "\n";	
+				
+			}
+							
+		}
+};
+ main(){
+	finaldata objb;
+	objb.personfunc();
+	objb.studentfunc();
+	objb.teacherfunc();
+	objb.print();	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.18.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading19">
+					    	<h5 class="mb-0">19) Assume that the test results of a batch of students are stored in three different classes. Class Students are stores the roll number. Class Test stores the marks obtained in two subjects and class result contains the total marks obtained in the test. The class result can inherit the details of the marks obtained in the test and roll number of students. (Multilevel Inheritance)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse19">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+int n,j,s,marks[50][50],total,totalof[50];
+class students{
+	protected:
+	int i,rno[50];
+	public:
+	studentsfun(){		
+		cout<<"Enter no of students: ";
+		cin>>n;
+		cout<<"\nstudents class data\n";
+		for(i=1;i<=n;i++){
+			cout<<"\nEnter roll no: ";
+			cin>>rno[i];	
+		}		
+	}	
+};
+class test : public students{			
+	public:
+		marksfunc(){
+			cout<<"\ntest class data\n";
+			cout<<"Enter no of subject: ";
+			cin>>s;			
+			for(i=1;i<=n;i++){
+				cout<<"\nStudent roll No " << i << " Data: \n";
+				for(j=1;j<=s;j++){
+					cout<<"\nEnter Sub-" << j << " marks: ";
+					cin>>marks[i][j];	
+				}	
+			}			
+		}
+};
+class result : public test{
+	public:
+		resultfunc(){
+			for(i=1;i<=n;i++){
+				for(j=1;j<=s;j++){
+					total = total + marks[i][j];	
+				}
+				totalof[i] = total;
+				total = 0;	
+			}			
+		}
+};
+class finaldata : public result{
+	public:
+	print_data(){
+		cout<<"\nfinaldata class data\n";
+		cout<<"\nRoll no: " << "\t"<<"Total Marks\n";
+			for(i=1;i<=n;i++){			
+				cout&#x3c;&#x3c;rno[i]<< "\t\t";				
+			cout&#x3c;&#x3c;totalof[i];
+				cout<<"\n";	
+			}
+		}
+};
+main(){
+	finaldata obj;
+	obj.studentsfun();
+	obj.marksfunc();
+	obj.resultfunc();
+	obj.print_data();
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.19.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading21">
+					    	<h5 class="mb-0">21) Write a program to find the multiplication values and the cubic values using inline function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class inline_func{
+   public:
+      inline float mul(float x,float y)
+      {
+                    return(x*y);
+      }
+      inline float cube(float x)
+      {
+                    return(x*x*x);
+      }
+};
+
+int main(){
+      inline_func obj;
+      float x,y;
+      cout<<"\nEnter value of x: ";
+      cin>>x;
+      cout<<"\nEnter value of y: ";
+      cin>>y;
+      cout<<"\nMultiplication of "<< x <<" and "<< y <<" is: "<< obj.mul(x,y);
+      cout<<"\n\nCube of "<< x << " is " << obj.cube(x)<<" and cube of " << y << " is " << obj.cube(y);
+
+      return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.21.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading22">
+					    	<h5 class="mb-0">22) Write a program to find the max number from given two numbers using friend function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse22" aria-expanded="true" aria-controls="collapse22">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class friendmax_func{
+	private:
+	   int x, y;
+   
+	public:
+	   void input(){
+	       cout << "Enter First numbers:";
+	       cin >> x;
+	       cout << "Enter Second numbers:";
+	       cin >> y;
+	   }
+	   friend void find(friendmax_func max);
+};
+
+void find(friendmax_func max) {
+   if (max.x > max.y) {
+       cout << "Largest is:" << max.x;
+   } else {
+       cout << "Largest is:" << max.y;
+   }
+}
+
+int main(){
+   friendmax_func max;
+   max.input();
+   find(max);
+   return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.22.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading23">
+					    	<h5 class="mb-0">23) Write a program to swap the two numbers using friend function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse23" aria-expanded="true" aria-controls="collapse23">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse23" class="collapse" aria-labelledby="heading23" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class friendfunc_swap{
+	 int x, y, q;
+	 public:
+	 void input__val(){
+	 cout << "Enter value of x :";
+	 cin >> x	;
+	 cout << "Enter value of y :";
+	 cin >> y;
+	}
+	friend void swap(friendfunc_swap &t);
+	void display(){
+	 cout << "After Swap x is :" << x << " and y is :" << y;
+	}
+};
+void swap(friendfunc_swap &t){
+    t.q = t.x;
+    t.x = t.y;
+    t.y = t.q;
+}
+int main(){
+    friendfunc_swap obj1;
+    obj1.input__val();
+    swap(obj1);
+    obj1.display();
+    return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.23.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading24">
+					    	<h5 class="mb-0">24) Write a program to swap the two numbers using friend function (Not Use of third variable)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse24" aria-expanded="true" aria-controls="collapse24">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse24" class="collapse" aria-labelledby="heading24" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+class friendfunc_swap{
+	public:
+	 int x, y;
+	 public:
+	 void input__val(){
+	 cout << "Enter value of x :";
+	 cin >> x	;
+	 cout << "Enter value of y :";
+	 cin >> y;
+	}
+	friend void swap(friendfunc_swap &t);
+	void display(){
+	 cout << "After Swap x is :" << x << " and y is :" << y;
+	}
+};
+void swap(friendfunc_swap &t){
+		t.x=t.x*t.y;     
+		t.y=t.x/t.y;    
+		t.x=t.x/t.y;  
+}
+int main(){
+    friendfunc_swap obj1;
+    obj1.input__val();
+    swap(obj1);
+    obj1.display();
+    return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.24.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading29">
+					    	<h5 class="mb-0">29) Write a program of to swap the two values using templates</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse29" aria-expanded="true" aria-controls="collapse29">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse29" class="collapse" aria-labelledby="heading29" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+template &#x3c;class T&#x3e;
+
+void Swap(T &x, T &y) {
+
+    T temp;
+    temp = x;
+    x = y;
+    y = temp;
+}
+
+int main() {
+
+    int x, y;
+
+    cout << "Enter value of x: ";
+    cin >> x;
+    cout << "Enter value of y:";
+    cin >> y;
+
+    cout << "Before Swap:";
+
+    cout << "\nx value is:" << x;
+    cout << "\ny value is:" << y;
+
+    Swap(x, y);
+
+    cout << "\n\nAfter Function Templates:\n";
+
+    cout << "\nx value is:" << x;
+    cout << "\ny value is:" << y;
+
+    return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.29.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading30">
+					    	<h5 class="mb-0">30) Write a program of to sort the array using templates.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse30" aria-expanded="true" aria-controls="collapse30">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse30" class="collapse" aria-labelledby="heading30" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+using namespace std;
+
+template &#x3c;class T&#x3e;
+
+void sort(T arr[], int SIZE){
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = i+1; j < SIZE; j++)
+		{
+			if (arr[i] > arr[j])
+			{
+				T temp;
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+}
+
+
+int main(){
+	int N, int_array[50];
+	cout<<"Entner no of array elements: ";
+	cin>>N;
+	cout<<"Entner integer array elements:\n";
+	for (int i = 0; i < N; i++)
+	{
+		cin>>int_array[i];
+	}
+	sort(int_array,N);
+	cout<<"After sorting they are :\n";
+	for (int i = 0; i < N; i++){
+		cout<< int_array[i]<<", ";
+	}
+	return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.30.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading31">
+					    	<h5 class="mb-0">31) create a example of use delete and new operator.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse31" aria-expanded="true" aria-controls="collapse31">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse31" class="collapse" aria-labelledby="heading31" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;iostream&#x3e;
+#include &#x3c;string&#x3e;
+using namespace std;
+
+int main(){
+   int *ptr = NULL;
+   ptr = new int();
+   int *var = new int(12);
+  
+   if(!ptr){
+        cout<<"bad memory allocation"<< endl;
+    }else{
+       cout<<"memory allocated successfully"<< endl;
+       *ptr = 10;
+       cout <<"*ptr = "<<*ptr<< endl;
+       cout<<"*var = "<<*var<< endl;
+	}
+  
+	double *myarray = NULL;
+	myarray = new double[10];
+	if(!myarray){
+		cout<<"memory not allocated"<< endl;
+		}else{
+	    for(int i=0;i<10;i++){
+	     	myarray[i] = i+1;
+		 }
+	       
+	    cout<<"myarray values : ";
+	    for(int i=0;i<10;i++){
+	     	cout<< myarray[i]<<"\t";
+		 }       
+	   }
+	delete ptr;
+	delete var;
+	delete[] myarray;
+	  
+	return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/cplus/Module-2.31.png">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center">
+			<h3>Thank You!</h3>
+		</div>
+	</div>
+</section>
+
+
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

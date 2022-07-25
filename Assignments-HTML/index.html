@@ -1,0 +1,4716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C Assignments</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="gotoTopo">
+	<a href="#home">&#x21e7;</a>
+</div>
+
+	<section>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-sticky">
+		  <a class="navbar-brand" href="index.html">Tops Assignments</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon lines">
+		    	<span></span>
+		    	<span></span>
+		    	<span></span>
+		    </span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">C Programme <span class="sr-only">(current)</span></a>
+		      </li>	 
+		      <li class="nav-item">
+		        <a class="nav-link" href="cpl.html">C++ Programme <span class="sr-only">(current)</span></a>
+		      </li>	 
+		      <li class="nav-item">
+		        <a class="nav-link" href="mvc_net.html">.Net MVC <span class="sr-only">(current)</span></a>
+		      </li>	
+		      <li class="nav-item">
+                <a class="nav-link" href="Data-Table-Desription.html">Data-Table-Desription <span class="sr-only">(current)</span></a>
+              </li>   
+		    </ul>
+		  </div>
+		</nav>
+	</section>
+<section class="pagetoppag" id="home">
+	<div class="container">	
+		<div class="modulemainblock">
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="modulemainheader">
+						<h1 class="mb-0">Module - 1 [C Programming ]</h1>
+					</div>
+					
+				</div>
+				<div class="col-12">
+					<div id="accordion" class="module1Cprogramacc">
+					  <div class="card">
+					    <div class="card-header" id="heading1">
+					    	<h5 class="mb-0">1) Display This Information using printf, Your Name, Your Birth date, Your Age, Your Address</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+
+	main(){
+		printf("Name: Prakash Gadhiya\n");
+		printf("DOB: 20/12/1989\n");
+		printf("Age: 32 Years\n");
+		printf("Address: A29 Bhagawan Nagar,\n Nr. Vraj Chowk,\n Sartahna Jakat Naka,\n Surat.\n");
+		printf("Contact: 7575000727");
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.1.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading2">
+					      <h5 class="mb-0">2) Write a program to make addition, Subtraction, Multiplication and Division of Two Numbers.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+int main()
+{
+    int x,y;
+	printf("Enter the first number: ");
+	scanf("%d",&x);
+	printf("Enter the second number: ");
+	scanf("%d",&y);
+	printf("\nAddition of %d + %d",x,y);
+	printf(" = %d",(x+y ));
+	printf("\nSubstraction of %d - %d",x,y);
+	printf(" = %d",(x-y));
+	printf("\nMultiplication of %d X %d",x,y);
+	printf(" = %d",(x*y ));
+	printf("\nDivision of  %d / %d",x,y);
+	printf(" = %d",(x/y ));
+
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.2.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading3">
+					      <h5 class="mb-0">3) Write a program to make a square and cube of number.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a;
+	printf("Enter the value of a: ");
+	scanf("%d",&a);
+	printf("\nSquare of value %d is: %d", a,a*a);
+	printf("\nCube of value %d is: %d", a,a*a*a);
+
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.3.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading4">
+					      <h5 class="mb-0">4) Write a program to find the Area of Circle</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+#define pi 3.14
+int	main(){
+		float radius,diameter, areabyR, areabyD;
+		//Area of circle by Radius		
+		printf("Enter the radius of circle: ");
+		scanf("%f",&radius);
+		areabyR = pi*radius*radius;
+		printf("Area of circle by radiua is: %f \n",areabyR);
+		
+		// Area of circle by Diameter
+		printf("Area of circle by Diameter: \n");
+		printf("Enter the diameter of circle: ");
+		scanf("%f",&diameter);
+		areabyD = pi*diameter*diameter/4;
+		printf("Area of circle by diameter is:  %f ", areabyD);
+		
+		
+	}	
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.4.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading5">
+					      <h5 class="mb-0">5) Write a program to find the Area of Triangle</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int height, base, area;
+	printf("Enter the perpendicular height of triangle: ");
+	scanf("%d",&height);
+	printf("Enetr the base width of triangle: ");
+	scanf("%d",&base);
+	area = height*base/2;
+	printf("Area of triangle is: %d ", area);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.5.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading6">
+					      <h5 class="mb-0">6) Write a program to find the simple Interest.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	float amount, duration, rateofinterest, totalinterest;
+	printf("Enter the amount: ");
+	scanf("%f",&amount);
+	printf("Enter the duration: ");
+	scanf("%f",&duration);
+	printf("Enter the rete of interest: ");
+	scanf("%f",&rateofinterest);
+	totalinterest = (amount*duration*rateofinterest)/100;
+	printf("Total interest is: %f",totalinterest);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.6.png">
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="card">
+					    <div class="card-header" id="heading7">
+					      <h5 class="mb-0">7) Write a program to convert temperature from degree centigrade to Fahrenheit</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	float celsius, fahrenheit;
+ 
+	 printf("\nEnter temperature in Celsius : ");
+	 scanf("%f", &celsius);
+	 
+	 fahrenheit = (1.8 * celsius) + 32;
+	 printf("\nTemperature in Fahrenheit : %f ", fahrenheit);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.7.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading8">
+					      <h5 class="mb-0">8) Write a program to calculate sum of 5 subjects & find the percentage. Subject marks entered by user</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int English, Gujarati, Maths, Biology, Physics, Totalmarks, total = 500;
+   float percentage;
+ 
+   printf("\nEnter marks of English subjects : ");
+   scanf("%d", &English);
+   
+   printf("\nEnter marks of Gujarati subjects : ");
+   scanf("%d", &Gujarati);
+   
+   printf("\nEnter marks of Maths subjects : ");
+   scanf("%d", &Maths);
+   
+   printf("\nEnter marks of Biology subjects : ");
+   scanf("%d", &Biology);
+   
+   printf("\nEnter marks of Physics subjects : ");
+   scanf("%d", &Physics);
+ 
+   Totalmarks = English + Gujarati + Maths + Biology + Physics;
+   printf("\nTotal Out of 500 marks : %d", Totalmarks);
+ 
+   percentage = (Totalmarks * 100) / total;
+   printf("\nPercentage : %f", percentage);
+   
+   if(percentage < 35){
+   	printf("\nFail");   	
+   }else if(percentage >= 35){
+   	printf("\nPass");
+   }
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.8.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading9">
+					      <h5 class="mb-0">9) Write a Program to show swap of two No's without using third variable. </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int x, y;
+	
+	printf("Enter value of x: ");
+	scanf("%d",&x);
+	
+	printf("\nEnter value of y: ");
+	scanf("%d",&y);
+	
+	printf("\nBefore swapping the value of x & y: %d , %d",x,y);
+	x=x+y;
+	y=x-y;
+	x=x-y;
+	
+	printf("\nAfter swapping the value of x & y: %d , %d",x,y);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.9.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading10">
+					      <h5 class="mb-0">10) Write a Program to check the given number is Positive, Negative. </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int x;
+	
+	printf("Enter the value of x: ");
+	scanf("%d",&x);
+	
+	if(x > 0){
+		printf("Entered value is Positive");
+	}else if(x == 0){
+		printf("Entered value is Zero");
+	}else{
+		printf("Entered value is Negative");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.10.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading11">
+					      <h5 class="mb-0">11) Write a Program to check the given year is leap year or not.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int year;
+	
+	printf("Enter the Year: ");
+	scanf("%d",&year);
+	
+	if(year % 400 == 0){
+		printf("%d is a Leap Year.",year);// leap year if perfectly divisible by 400
+	}else if (year % 100 == 0){
+		printf("%d is not a Leap Year.",year); // not a leap year if divisible by 100 but not divisible by 400
+	}else if (year % 4 == 0){
+		printf("%d is a Leap Year.",year); // leap year if not divisible by 100 but divisible by 4
+	}else{
+		printf("%d is not a Leap Year.",year); // all other years are not leap years
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.11.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading12">
+					      <h5 class="mb-0">12) Write a Program to check the given number is prime or not prime. </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+
+	int a1, b1 = 2, count1,n1, a2, b2 = 2, count2,n2, a3, b3, count3,n3; 
+	printf("Using While Loop \n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	
+	while(b1 <= n1)
+	{
+	count1 = 0;
+	a1 = 2;
+	while(a1 <= b1/2)
+	{
+	  if(b1%a1 == 0)
+	  {
+	    count1++;
+	break;
+	  }
+	  a1++;	
+	}	
+	if(count1 == 0 && b1 != 1 )
+	{
+	printf("\n %d is prime \n", b1);
+	}else{
+		printf("\n %d is not prime \n", b1);
+	}
+	b1++; 
+	}
+	
+	printf("\n");
+	printf("Using Do While Loop \n");
+  	printf("Enter the value of n2: ");
+  	scanf("%d",&n2);
+  	
+  	do{
+  		count2 = 0;
+	a2 = 2;
+	while(a2 <= b2/2)
+	{
+	  if(b2%a2 == 0)
+	  {
+	    count2++;
+		break;
+	  }
+	  a2++;	
+	}	
+	if(count2 == 0 && b2 != 1 )
+	{
+	printf("\n %d is prime \n", b2);
+	}else{
+		printf("\n %d is not prime \n", b2);
+	}
+	b2++; 
+	  }while(b2 <= n2);
+	  
+	  
+	printf("\n");
+	printf("Using For Loop \n");
+  	printf("Enter the value of n3: ");
+  	scanf("%d",&n3);
+ 	for(b3=2;b3 <= n3;b3++){
+ 		count3 = 0;
+		a3 = 2;
+ 		for(a3;a3 <= b3/2;a3++){
+ 			if(b3%a3 == 0){
+			    count3++;
+				break;
+			  }
+		 }
+		 if(count3 == 0 && b3 != 1 ){
+			printf("\n %d is prime \n", b3);
+			}else{
+				printf("\n %d is not prime \n", b3);
+			}
+	 }
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.12.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading13">
+					      <h5 class="mb-0">13) Write a program to find the Max number from the given three number using Nested If</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a,b,c;
+	
+	printf("Enter The value of a: ");
+	scanf("%d",&a);
+	
+	printf("Enter The value of b: ");
+	scanf("%d",&b);
+	
+	printf("Enter The value of c: ");
+	scanf("%d",&c);
+	
+	if(a > b){
+		if(a > c){
+			printf("%d is the Biggest",a);
+		}else{
+		printf("%d is the Biggest",c);
+		}				
+	
+	}else {
+		if(b > c) {
+		printf("%d is the Biggest",b);
+	}else{
+		printf("%d is the Biggest",c);
+		}
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.13.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading14">
+					      <h5 class="mb-0">14) Write a program to find the Max number from the given three number using Ternary Operator </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+
+    int n1, n2,n3, max;
+    printf("Enter the value of n1: ");
+	scanf("%d",&n1); 
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);
+    
+    max = (n1 > n2) ? (n1 > n3 ? n1 : n3) : (n2 > n3 ? n2 : n3);     
+    
+    printf("Largest number between %d , %d and %d is: %d. ",n1, n2,n3, max);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.14.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading16">
+					      <h5 class="mb-0">16) Write a program user enter the 5 subjects mark. You have to make a total and find the percentage. (percentage > 75 you have to print “Distinction” percentage > 60 and percentage <= 75 you have to print “First class” percentage >50 and percentage <= 60 you have to print “Second class” percentage > 35 and percentage <= 50 you have to print “Pass class” Otherwise print “Fail”)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	float Eng, Guj, Hindi, Maths, Biology,Totalmarks, Percent, Overall = 500;
+	
+	printf("Enter the marks of subject Eng: ");
+	scanf("%f",&Eng);
+	
+	printf("Enter the marks of subject Guj: ");
+	scanf("%f",&Guj);
+	
+	printf("Enter the marks of subject Hindi: ");
+	scanf("%f",&Hindi);
+	
+	printf("Enter the marks of subject Maths: ");
+	scanf("%f",&Maths);
+	
+	printf("Enter the marks of subject Biology: ");
+	scanf("%f",&Biology);
+	
+	
+	Totalmarks = Eng + Guj + Hindi + Maths + Biology;
+	
+	printf("Total Marks: %f",Totalmarks);
+	
+	Percent = (Totalmarks * 100) / Overall;
+	
+	printf("\nPercentage: %f",Percent);
+	
+	if(Percent > 75){
+		printf("\nDistinction");
+	}else if(Percent > 60 && Percent <= 75){
+		printf("\nFirst class");
+	}else if(Percent > 50 && Percent <= 60){
+		printf("\nSecond class");
+	}else if(Percent > 35 && Percent <= 50){
+		printf("\nPass class");
+	}else{
+		printf("\nFail");
+	}	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.16.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading17">
+					      <h5 class="mb-0">17) Write Program use switch statement. Display Monday to Sunday (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Numofday;
+	
+	printf("Enter the value between 1 - 7: ");
+	scanf("%d",&Numofday);
+	
+	switch(Numofday){
+		case(1):
+		printf("Today is Monday \n");
+		break;
+		
+		case(2):
+		printf("Today is Tuesday \n");
+		break;
+		
+		case(3):
+		printf("Today is Wednesday \n");
+		break;
+		
+		case(4):
+		printf("Today is Thursday \n");
+		break;
+		
+		case(5):
+		printf("Today is Friday \n");
+		break;
+		
+		case(6):
+		printf("Today is Saturday \n");
+		break;
+		
+		case(7):
+		printf("Today is Sunday \n");
+		break;
+		
+		default: 
+		printf("Out of week Days.... \n");
+		break;
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.17.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading18">
+					      <h5 class="mb-0">18) Write a Program of Addition, Subtraction ,Multiplication and Division using Switch case.(Must Be Menu Driven)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse18">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int x,y,choice;
+	
+	printf("Press 1 for Addition");
+	printf("\nPress 2 for Subtraction");
+	printf("\nPress 3 for Multiplication");
+	printf("\nPress 4 for Division");
+	
+	printf("\nEnter Value of x: ");
+	scanf("%d",&x);
+	
+	printf("\nEnter Value of y: ");
+	scanf("%d",&y);
+	
+	printf("\nEnter the case 1 - 4: ");
+	scanf("%d",&choice);
+	
+	switch(choice){
+		case (1):
+		printf("\nSum of x and y is: %d",x+y);
+		break;	
+		
+		case (2):
+		printf("\nSubtraction of x and y is: %d",x-y);
+		break;	
+		
+		case (3):
+		printf("\nMultiplication of x and y is: %d",x*y);
+		break;	
+		
+		case (4):
+		printf("\nDivision of x and y is: %d",x/y);
+		break;
+		
+		default: 
+		printf("Wrong input... \n");
+		break;
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.18.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading19">
+					      <h5 class="mb-0">19) Write a program of to find out the Area of Triangle, Rectangle and Circle using If Condition.(Must Be Menu Driven) </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse19">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	float height, width, radius, area, objselect;
+	
+	printf("Press 1 for Area of Triangle");
+	printf("\nPress 2 for Area of Rectangle");
+	printf("\nPress 3 for Area of Circle");
+	
+	printf("\nEnter the object selection from above between 1 - 3: ");
+	scanf("%f",&objselect);
+	
+	if(objselect == 1){
+		printf("\nYou have choose Triangle");
+		
+		printf("\nEnter the height: ");
+		scanf("%f",&height);
+		
+		printf("\nEnter the base: ");
+		scanf("%f",&width);
+		
+		area =  height * width / 2;
+		
+		printf("\nArea of triangle is: %f",area);
+	}else if(objselect == 2){
+		printf("\nYou have choose Rectangle");
+		
+		printf("\nEnter the width: ");
+		scanf("%f",&height);
+		
+		printf("\nEnter the height: ");
+		scanf("%f",&width);
+		
+		area =  width * height;
+		printf("\nArea of Rectangle is: %f",area);
+	}
+	else if(objselect == 3){
+		printf("\nYou have choose Circle");
+		
+		printf("\nEnter the Radius: ");
+		scanf("%f",&radius);
+		
+		area =  pi * radius * radius;
+		printf("\nArea of Rectangle is: %f",area);
+	}else{
+		printf("\nEnter wrong selection");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.19.png">
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="card">
+					    <div class="card-header" id="heading20a">
+					      <h5 class="mb-0">20-a)  Write a program to print the 1 to 10 using loop. </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20a" aria-expanded="true" aria-controls="collapse20a">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20a" class="collapse" aria-labelledby="heading20a" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int n=1,a=1,i;	
+printf("Using While\n");
+	while (n <= 10){
+		printf(" %d\n",n);
+		n++;
+	}
+	
+	printf("Using Do While\n");
+	
+	do{
+		printf(" %d\n",a);
+		a++;
+	}while(a <= 10);
+	
+	printf("Using For Loop\n");
+	
+	for(i=1;i<=10;i++){
+		printf(" %d\n",i);
+	}
+	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-a.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20b">
+					      <h5 class="mb-0">20-b)  Write a Program to print the 51 to 60 using loop</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20b" aria-expanded="true" aria-controls="collapse20b">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20b" class="collapse" aria-labelledby="heading20b" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int n=51,a=51,i,c=60;
+	
+	printf("Using While\n");
+	while(n<=c){
+		printf(" %d\n",n);
+		n++;
+	}
+	
+	printf("Using Do While\n");
+	do{
+		printf(" %d\n",a);
+		a++;
+	}while(a<=c);
+	
+	printf("Using For Loop\n");
+	for(i=51;i<=c;i++){
+		printf(" %d\n",i);
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-b.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20c">
+					      <h5 class="mb-0">20-c) Write a program to print the 100 to 81 using loop </h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20c" aria-expanded="true" aria-controls="collapse20c">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20c" class="collapse" aria-labelledby="heading20c" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a=100,b=100,c=81,i;
+	
+	printf("Using While\n");
+	while(a>=c){
+		printf(" %d",a);
+		a--;
+	}
+	printf("\nUsing Do While\n");
+	do{
+		printf(" %d",b);
+		b--;
+	}while(b>=c);
+	
+	printf("\nUsing For Loop\n");
+	for(i=100;i>=c;i--){
+		printf(" %d",i);
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-c.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20d">
+					      <h5 class="mb-0">20-d) write a program you have to find the factorial of given number using loop</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20d" aria-expanded="true" aria-controls="collapse20d">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20d" class="collapse" aria-labelledby="heading20d" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	
+	int a,b,fact1, c,d,fact2, e,f,fact3;
+	printf("Using While\n");
+	printf("Enter the value of b: ");
+	scanf("%d",&b);
+	fact1=a= 1;
+
+	while(a<=b){
+		fact1 = fact1 * a;
+		a++;
+	}
+	printf("Factorial is: %d",fact1);
+	
+	printf("\n");
+	
+	printf("\nUsing Do While\n");
+	printf("Enter the value of d: ");
+	scanf("%d",&d);
+	fact2=c=1;
+	
+	do{
+		fact2 = fact2 * c;
+		c++;	
+	}while(c<=d);
+	printf("Factorial is: %d",fact2);
+	
+	printf("\n");
+	
+	printf("\nUsing For Loop\n");
+	printf("Enter the value of f: ");
+	scanf("%d",&f);
+	fact3=e=1;
+	for(e;e<=f;e++){
+		fact3 = fact3 * e;
+	}
+	printf("Factorial is: %d",fact3);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-d.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20e">
+					      <h5 class="mb-0">20-e) Write a program you have to print the Fibonacci series up to user given number</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20e" aria-expanded="true" aria-controls="collapse20e">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20e" class="collapse" aria-labelledby="heading20e" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1=0,a2=1,a3,n1,b1=0,b2=1,b3,n2,c1=0,c2=1,c3,n3;
+	
+	printf("Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	printf("%d %d",a1,a2);
+	while(a3<=n1){
+		a3=a1+a2;
+		 printf(" %d",a3);
+		 a1=a2; 
+		 a2=a3; 
+		 a3++;
+		 
+	}
+	
+	printf("\n");
+	printf("Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	printf("%d %d",b1,b2);
+	do{
+		b3=b1+b2;
+		 printf(" %d",b3);
+		 b1=b2; 
+		 b2=b3; 
+		 b3++;
+	}while(b3<=n2);
+	
+	printf("\n");
+	printf("Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	printf("%d %d",c1,c2);
+	for(c3;c3<=n3;c3++){
+		c3=c1+c2;
+		 printf(" %d",c3);
+		 c1=c2; 
+		 c2=c3; 
+		 c3++;
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-e.png">
+					      </div>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <div class="card-header" id="heading20f">
+					      <h5 class="mb-0">20-f) write a program you have to print the table of given number.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20f" aria-expanded="true" aria-controls="collapse20f">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20f" class="collapse" aria-labelledby="heading20f" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1=1,A1, a2,b2=1,A2, a3,b3=1,A3;
+	
+	printf("Using While\n");
+	printf("Enter the value of a1: ");
+	scanf("%d",&a1);
+	while(b1<=10){
+		A1 = b1 * a1; 
+		printf("%d X %d = %d \n",a1,b1,A1);
+		b1++;
+	}
+	printf("\n");
+	printf("Using While\n");
+	printf("Enter the value of a2: ");
+	scanf("%d",&a2);
+	do{
+		A2 = b2 * a2; 
+		printf("%d X %d = %d \n",a2,b2,A2);
+		b2++;
+	}while(b2<=10);
+	
+	printf("\n");	
+	printf("Using For Loop\n");
+	printf("Enter the value of a3: ");
+	scanf("%d",&a3);
+	for(b3;b3<=10;b3++){
+		A3 = b3 * a3; 
+		printf("%d X %d = %d \n",a3,b3,A3);
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-f.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20g">
+					      <h5 class="mb-0">20-g) Write a program to print the number in reverse order</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20g" aria-expanded="true" aria-controls="collapse20g">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20g" class="collapse" aria-labelledby="heading20g" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1, b1 = 0,n1, a2,b2 = 0,n2, a3=0, b3,n3; 
+	printf("Using While Loop \n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	while(n1!=0){
+		b1 = n1%10;
+		a1 = a1 * 10 + b1;
+		n1 = n1/10;
+	}
+	printf("Output is: %d",a1);
+	
+	printf("\n");
+	printf("\nUsing Do While Loop \n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);
+	do{
+		b2 = n2%10;
+		a2 = a2 * 10 + b2;
+		n2 = n2/10;
+	}while(n2!=0);
+	printf("Output is: %d",a2);
+	
+	printf("\n");
+	printf("\nUsing For Loop \n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);
+	for(n3;n3!=0;n3 = n3/10){
+		b3 = n3%10;
+		a3 = a3 * 10 + b3;		
+	}
+	printf("Output is: %d",a3);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-g.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20h">
+					      <h5 class="mb-0">20-h) Write a program to find out the max from given number (E.g. No: -1562 Max number is 6 )</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20h" aria-expanded="true" aria-controls="collapse20h">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20h" class="collapse" aria-labelledby="heading20h" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+
+	 int n1, max1 = 0, rem1 = 0, n2, max2 = 0, rem2 = 0, n3, max3 = 0, rem3 = 0;
+        
+        printf("Using While Loop \n");
+        printf("Enter your input value:");
+        scanf("%d", &n1);
+        
+        while (n1 > 0) {
+                rem1 = n1 % 10;
+
+                if (rem1 > max1) {
+                        max1 = rem1;
+                }
+
+                n1 = n1 / 10;
+        }
+        
+        printf("Largest digit of the number is: %d\n", max1);
+        
+        printf("\n");
+        printf("Using Do While Loop \n");
+        printf("Enter your input value:");
+        scanf("%d", &n2);
+        do{
+        	rem2 = n2 % 10;
+
+                if (rem2 > max2) {
+                        max2 = rem2;
+                }
+
+                n2 = n2 / 10;
+		}while(n2 > 0);
+		printf("Largest digit of the number is: %d\n", max2);
+		
+		printf("\n");
+        printf("Using For Loop \n");
+        printf("Enter your input value:");
+        scanf("%d", &n3);
+        
+        for(n3;n3 > 0;n3 = n3 / 10){
+        	rem3 = n3 % 10;
+
+                if (rem3 > max3) {
+                        max3 = rem3;
+                }
+
+                n3 = n3 / 10;
+        	
+		}
+		printf("Largest digit of the number is: %d\n", max3);
+	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-h.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20i">
+					      <h5 class="mb-0">20-i) Write a program make a summation of given number(E.g. 1523 ans :-11)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20i" aria-expanded="true" aria-controls="collapse20i">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20i" class="collapse" aria-labelledby="heading20i" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+
+		int n1,sum1=0,rem1, n2,sum2=0,rem2, n3,sum3=0,rem3; 
+		
+		printf("Using While Loop \n");
+		printf("Enter a number:");    
+		scanf("%d",&n1);    
+		while(n1>0)    
+		{    
+		rem1=n1%10;    
+		sum1=sum1+rem1;    
+		n1=n1/10;    
+		}    
+		printf("Sum is=%d",sum1);  
+		
+		printf("\n");
+		printf("\nUsing Do While Loop \n");
+		printf("Enter a number:");    
+		scanf("%d",&n2); 
+		do{
+		rem2=n2%10;    
+		sum2=sum2+rem2;    
+		n2=n2/10; 	
+		}while(n2>0); 		  
+		printf("Sum is=%d",sum2);  
+		
+		printf("\n");
+		printf("\nUsing For Loop \n");
+		printf("Enter a number:");    
+		scanf("%d",&n3); 
+		
+		for(n3;n3>0;n3=n3/10){
+			rem3=n3%10;    
+			sum3=sum3+rem3;  
+		}
+			printf("Sum is=%d",sum3); 
+	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-i.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20j">
+					      <h5 class="mb-0">20-j) Write a program you have to make a summation of first and last Digit. (E.g. 1234 ans:-5)</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20j" aria-expanded="true" aria-controls="collapse20j">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20j" class="collapse" aria-labelledby="heading20j" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+
+	int n1, sum1=0, fd1, ld1, n2, sum2=0, fd2, ld2, n3,sum3=0,fd3, ld3;
+	
+	printf("Using While Loop \n");
+    printf("Enter number to find sum of first and last digit: ");
+    scanf("%d", &n1);
+	    
+    ld1 = n1 % 10;    
+    while(n1 >= 10)
+    {
+        n1 = n1 / 10;
+    }
+    fd1 = n1;    
+    sum1 = fd1 + ld1;
+    printf("Sum of first and last digit = %d", sum1);
+    
+    printf("\n");
+	printf("\nUsing Do While Loop \n");
+	printf("Enter a number:");    
+	scanf("%d",&n2); 
+	ld2 = n2 % 10;
+	do{
+	n2 = n2 / 10;	
+	}while(n2 >= 10);
+	fd2 = n2;    
+    sum2 = fd2 + ld2;
+    printf("Sum of first and last digit = %d", sum2);
+    
+    printf("\n");
+	printf("\nUsing For Loop \n");
+	printf("Enter a number:");    
+	scanf("%d",&n3); 
+	
+	ld3 = n3 % 10;
+	for(n3;n3 >0;n3 = n3 / 10){	
+	fd3 = n3;	
+	sum3 = fd3 + ld3;	 
+	}	
+	printf("Sum of first and last digit = %d", sum3);
+	
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20-j.png">
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="card">
+					    <div class="card-header" id="headingp1">
+					      <h5 class="mb-0">P-1) Pyramid - 1</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep1" aria-expanded="true" aria-controls="collapsep1">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep1" class="collapse" aria-labelledby="headingp1" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1 = 0, b1 = 0,n1, a2 = 0, b2 = 0,n2, a3 = 0, b3 = 0,n3;
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	while(a1 < n1){		
+			while(b1 <= a1){
+			printf("* ");	
+			b1++;				
+		}
+		printf("\n");
+		b1 = 0;
+		a1++;			
+	}
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);
+	do{
+			while(b2 <= a2){
+			printf("* ");	
+			b2++;				
+		}
+		printf("\n");
+		b2 = 0;
+		a2++;
+	}while(a2 < n2);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop	\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);
+	for(a3;a3&#x3c;n3;a3++){
+		for(b3;b3<=a3;b3++){
+			printf("* ");				
+		}
+		printf("\n");
+		b3 = 0;
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-1.png">
+					      </div>
+					    </div>
+					  </div>	
+					   <div class="card">
+					    <div class="card-header" id="headingp2">
+					      <h5 class="mb-0">P-2) Pyramid - 2</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep2" aria-expanded="true" aria-controls="collapsep2">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep2" class="collapse" aria-labelledby="headingp2" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1=1,b1,n1, a2,b2=1,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	while(a1 <= n1){
+		while(b1 <= a1){
+			printf("%d ",b1);
+			b1++;
+		}
+		b1=1;
+		printf("\n");
+		a1++;
+	}
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);
+	do{
+		while(b2 <= a2){
+			printf("%d ",b2);
+		b2++;
+		}
+		b2=1;
+		printf("\n");
+		a2++;	
+	}while(a2 <= n2);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);
+	for(a3=1;a3<=n3;a3++){
+		for(b3=1;b3<=a3;b3++){
+			printf("%d ",b3);		
+		}
+		printf("\n");				
+	}
+		
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-2.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp3">
+					      <h5 class="mb-0">P-3) Pyramid - 3</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep3" aria-expanded="true" aria-controls="collapsep3">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep3" class="collapse" aria-labelledby="headingp3" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2=1,n2, a3,b3,n3;
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	while(a1<=n1){
+		while(b1<=a1){
+			printf("%d ",a1);
+			b1++;
+		}
+		b1=1;
+		printf("\n");
+		a1++;
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);
+	do{
+		while(b2<=a2){
+			printf("%d ",a2);
+			b2++;
+		}
+		b2=1;
+		printf("\n");
+		a2++;
+	}while(a2<=n2);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);
+	for(a3;a3<=n3;a3++){
+		for(b3;b3<=a3;b3++){
+			printf("%d ",a3);
+		}
+		b3=1;
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-3.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp4">
+					      <h5 class="mb-0">P-4) Pyramid - 4</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep4" aria-expanded="true" aria-controls="collapsep4">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep4" class="collapse" aria-labelledby="headingp4" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=n1;
+	while(a1>=1){
+		b1=1;
+		while(b1&#x3c;a1){
+			printf(" ");
+			b1++;
+		}
+		b1=a1;
+		while(b1<=n1){
+			printf("*");
+			b1++;
+		}
+		a1--;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=n2;
+	do{
+		b2=1;
+		while(b2&#x3c;a2){
+			printf(" ");
+			b2++;
+		}
+		b2=a2;
+		while(b2<=n2){
+			printf("*");
+			b2++;
+		}
+		a2--;
+		printf("\n");
+	}while(a2>=1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=n3;a3>=1;a3--){
+		for(b3=1;b3&#x3c;a3;b3++){
+			printf(" ");
+		}
+		for(b3=a3;b3<=n3;b3++){
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-4.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp5">
+					      <h5 class="mb-0">P-5) Pyramid - 5</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep5" aria-expanded="true" aria-controls="collapsep5">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep5" class="collapse" aria-labelledby="headingp5" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+		b1=a1;
+		while(b1&#x3c;n1){
+			printf(" ");
+			b1++;
+		}
+		b1=a1;
+		while(b1>=1){
+			printf("%d",b1);
+			b1--;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		b2=n2;
+		while(b2>a2){
+			printf(" ");
+			b2--;
+		}
+		b2=a2;
+		while(b2>=1){
+			printf("%d",b2);
+			b2--;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+		for(b3=n3;b3>a3;b3--){
+			printf(" ");
+		}
+		for(b3=a3;b3>=1;b3--){
+			printf("%d",b3);
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-5.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp7">
+					      <h5 class="mb-0">P-7) Pyramid - 7</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep7" aria-expanded="true" aria-controls="collapsep7">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep7" class="collapse" aria-labelledby="headingp7" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+		b1=a1;
+		while(b1&#x3c;n1){
+			printf(" ");
+			b1++;
+		}
+		b1=a1;
+		while(b1>=1){
+			printf(" *");
+			b1--;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		b2=n2;
+		while(b2>a2){
+			printf(" ");
+			b2--;
+		}
+		b2=a2;
+		while(b2>=1){
+			printf(" *");
+			b2--;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+		for(b3=n3;b3>a3;b3--){
+			printf(" ");
+		}
+		for(b3=a3;b3>=1;b3--){
+			printf(" *");
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-7.png">
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="card">
+					    <div class="card-header" id="headingp8">
+					      <h5 class="mb-0">P-8) Pyramid - 8</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep8" aria-expanded="true" aria-controls="collapsep8">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep8" class="collapse" aria-labelledby="headingp8" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+		b1=a1;
+		while(b1&#x3c;n1){
+			printf(" ");
+			b1++;
+		}
+		b1=1;
+		while(b1<=a1){
+			printf(" %d",b1);
+			b1++;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		b2=a2;
+		while(b2&#x3c;n2){
+			printf(" ");
+			b2++;
+		}
+		b2=1;
+		while(b2<=a2){
+			printf(" %d",b2);
+			b2++;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+		for(b3=a3;b3&#x3c;n3;b3++){
+			printf(" ");
+		}
+		for(b3=1;b3<=a3;b3++){
+			printf(" %d",b3);
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-8.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp9">
+					      <h5 class="mb-0">P-9) Pyramid - 9</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep9" aria-expanded="true" aria-controls="collapsep9">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep9" class="collapse" aria-labelledby="headingp9" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+		b1=a1;
+		while(b1&#x3c;n1){
+			printf(" ");
+			b1++;
+		}
+		b1=1;
+		while(b1<=a1){
+			printf(" %d",a1);
+			b1++;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		b2=a2;
+		while(b2&#x3c;n2){
+			printf(" ");
+			b2++;
+		}
+		b2=1;
+		while(b2<=a2){
+			printf(" %d",a2);
+			b2++;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+		for(b3=a3;b3&#x3c;n3;b3++){
+			printf(" ");
+		}
+		for(b3=1;b3<=a3;b3++){
+			printf(" %d",a3);
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-9.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp10">
+					      <h5 class="mb-0">P-10) Pyramid - 10</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep10" aria-expanded="true" aria-controls="collapsep10">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep10" class="collapse" aria-labelledby="headingp10" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,c1=1,n1, a2,b2,c2=1,n2, a3,b3,c3=1,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+		b1=1;
+		while(b1<=a1){
+			printf(" %d",c1);
+			c1++;
+			b1++;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{		
+		b2=1;
+		while(b2<=a2){
+			printf(" %d",c2);
+			c2++;
+			b2++;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){	
+		for(b3=1;b3<=a3;b3++){
+			printf(" %d",c3);
+			c3++;
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-10.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp11">
+					      <h5 class="mb-0">P-11) Pyramid - 11</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep11" aria-expanded="true" aria-controls="collapsep11">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep11" class="collapse" aria-labelledby="headingp11" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,c1=1,n1, a2,b2,c2=1,n2, a3,b3,c3=1,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+		b1=1;
+		while(b1<=a1){
+			if(c1%2==0){
+				printf("1 ");
+			}else if(c1/2!=0){
+			printf("0 ");	
+			}else if(c1 == 1){
+				printf("1 ");
+			}
+			
+			c1++;
+			b1++;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{		
+		b2=1;
+		while(b2<=a2){
+			if(c2%2==0){
+				printf("1 ");
+			}else if(c2/2!=0){
+			printf("0 ");	
+			}else if(c2 == 1){
+				printf("1 ");
+			}
+			c2++;
+			b2++;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){	
+		for(b3=1;b3<=a3;b3++){
+			if(c3%2==0){
+				printf("1 ");
+			}else if(c3/2!=0){
+			printf("0 ");	
+			}else if(c3 == 1){
+				printf("1 ");
+			}
+			c3++;
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-11.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp12">
+					      <h5 class="mb-0">P-12) Pyramid - 12</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep12" aria-expanded="true" aria-controls="collapsep12">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep12" class="collapse" aria-labelledby="headingp12" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+
+		b1=1;
+		while(b1<=a1){
+			printf(" %d",a1*a1);
+			b1++;
+		}
+		a1++;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		
+		b2=1;
+		while(b2<=a2){
+			printf(" %d",a2*a2);
+			b2++;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+	
+		for(b3=1;b3<=a3;b3++){
+			printf(" %d",a3*a3);
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-12.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp13">
+					      <h5 class="mb-0">P-13) Pyramid - 13</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep13" aria-expanded="true" aria-controls="collapsep13">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep13" class="collapse" aria-labelledby="headingp13" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=1;
+	while(a1<=n1){
+
+		b1=1;
+		while(b1<=a1){
+			printf("*");
+			b1++;
+		}
+		a1++;
+		printf("\n");
+	}
+	a1=n1-1;
+	while(a1>=1){
+
+		b1=1;
+		while(b1<=a1){
+			printf("*");
+			b1++;
+		}
+		a1--;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		
+		b2=1;
+		while(b2<=a2){
+			printf("*");
+			b2++;
+		}
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	a2=n2-1;
+	do{
+		
+		b2=1;
+		while(b2<=a2){
+			printf("*");
+			b2++;
+		}
+		a2--;
+		printf("\n");
+	}while(a2>=1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+	
+		for(b3=1;b3<=a3;b3++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	for(a3=n3-1;a3>=1;a3--){
+	
+		for(b3=1;b3<=a3;b3++){
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-13.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp14">
+					      <h5 class="mb-0">P-14) Pyramid - 14</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep14" aria-expanded="true" aria-controls="collapsep14">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep14" class="collapse" aria-labelledby="headingp14" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=n1;
+	while(a1>=1){
+		b1=a1;
+		while(b1&#x3c;n1){
+			printf(" ");
+			b1++;
+		}
+		b1=1;
+		while(b1<=a1){
+			printf(" *");
+			b1++;
+		}
+		a1--;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=n2;
+	do{
+		b2=a2;
+		while(b2&#x3c;n2){
+			printf(" ");
+			b2++;
+		}
+		b2=1;
+		while(b2<=a2){
+			printf(" *");
+			b2++;
+		}
+		a2--;
+		printf("\n");
+	}while(a2>=1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=n3;a3>=1;a3--){
+		for(b3=a3;b3&#x3c;n3;b3++){
+			printf(" ");
+		}
+		for(b3=1;b3<=a3;b3++){
+			printf(" *",a3);
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-14.png">
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="card">
+					    <div class="card-header" id="headingp15">
+					      <h5 class="mb-0">P-15) Pyramid - 15</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep15" aria-expanded="true" aria-controls="collapsep15">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep15" class="collapse" aria-labelledby="headingp15" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=n1;
+	while(a1>=1){
+		
+		b1=1;
+		while(b1<=a1){
+			printf("*");
+			b1++;
+		}
+		b1=a1*2;
+		while(b1&#x3c;n1*2){
+			printf(" ");
+			b1++;
+		}
+
+		b1=1;
+		while(b1<=a1){
+			printf("*");
+			b1++;
+		}
+		a1--;
+		printf("\n");
+	}
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=n2;
+	do{
+		
+		b2=1;
+		while(b2<=a2){
+			printf("*");
+			b2++;
+		}
+		b2=a2*2;
+		while(b2&#x3c;n2*2){
+			printf(" ");
+			b2++;
+		}
+		b2=1;
+		while(b2<=a2){
+			printf("*");
+			b2++;
+		}
+		a2--;
+		printf("\n");
+	}while(a2>=1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=n3;a3>=1;a3--){
+		
+		for(b3=1;b3<=a3;b3++){
+			printf("*",a3);
+		}
+		for(b3=a3*2;b3&#x3c;n3*2;b3++){
+			printf(" ");
+		}
+		for(b3=1;b3<=a3;b3++){
+			printf("*",a3);
+		}
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-15.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingp16">
+					      <h5 class="mb-0">P-16) Pyramid - 16</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsep16" aria-expanded="true" aria-controls="collapsep16">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapsep16" class="collapse" aria-labelledby="headingp16" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a1,b1,n1, a2,b2,n2, a3,b3,n3;
+	
+	printf("Pyramid Using While\n");
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);	
+	a1=n1;
+	while(a1>=1){
+		b1=1;
+		while(b1&#x3c;a1){
+			printf(" ");
+			b1++;
+		}
+		b1=n1;
+		while(b1>=a1){
+			printf(" *");
+			b1--;
+		}
+		
+		printf("\n");
+		a1--;
+	}
+a1=n1-1;
+	while(a1>=1){
+		b1=a1;
+		while(b1&#x3c;n1){
+			printf(" ");
+			b1++;
+		}
+		b1=1;
+		while(b1<=a1){
+			printf(" *");
+			b1++;
+		}
+		a1--;
+		printf("\n");
+	}
+	
+	
+	
+	printf("\n");
+	printf("Pyramid Using Do While\n");
+	printf("Enter the value of n2: ");
+	scanf("%d",&n2);	
+	a2=1;
+	do{
+		b2=a2;
+		while(b2&#x3c;n2){
+			printf(" ");
+			b2++;
+		}
+		b2=1;
+		while(b2<=a2){
+			printf(" *");
+			b2++;
+		}	
+		a2++;
+		printf("\n");
+	}while(a2<=n1);
+	a2=n2-1;
+	do{
+		b2=a2;
+		while(b2&#x3c;n2){
+			printf(" ");
+			b2++;
+		}
+		b2=1;
+		while(b2<=a2){
+			printf(" *");
+			b2++;
+		}	
+		a2--;
+		printf("\n");
+	}while(a2>=1);
+	
+	printf("\n");
+	printf("Pyramid Using For Loop\n");
+	printf("Enter the value of n3: ");
+	scanf("%d",&n3);	
+	
+	for(a3=1;a3<=n3;a3++){
+		for(b3=a3;b3&#x3c;n3;b3++){
+			printf(" ");
+		}
+		for(b3=1;b3<=a3;b3++){
+			printf(" *",a3);
+		}				
+		printf("\n");
+	}
+	for(a3=n3-1;a3>=1;a3--){
+		for(b3=a3;b3&#x3c;n3;b3++){
+			printf(" ");
+		}
+		for(b3=1;b3<=a3;b3++){
+			printf(" *",a3);
+		}				
+		printf("\n");
+	}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/pyramid-16.1.png">
+					        <img class="img-fluid" src="images/c/pyramid-16.2.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading20arr">
+					      <h5 class="mb-0">20-Array) Write a program to enter a five elements using Array and print it on a screen.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20arr" aria-expanded="true" aria-controls="collapse20arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse20arr" class="collapse" aria-labelledby="heading20arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+int arr[5],i; 
+    
+  
+    printf("Input 5 elements in the array :\n");  
+    for(i=0; i<5; i++)  
+    {  	    
+        scanf("%d", &arr[i]);  
+    }  
+  
+    printf("\nElements in array are: ");  
+    for(i=0; i<5; i++)  
+    {  
+        printf("%d  ", arr[i]);  
+    } 
+    printf("\n");    
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.20Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading21arr">
+					      <h5 class="mb-0">21-Array) Write a program to enter a ten elements using Array and find out the to count the total number of odd and even numbers</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21arr" aria-expanded="true" aria-controls="collapse21arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse21arr" class="collapse" aria-labelledby="heading21arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a[100],i,n,even=0,odd=0;
+   
+    printf("Enter size of the array : ");
+    scanf("%d",&n);
+ 
+    printf("Enter elements in array : ");
+    for(i=0; i&#x3c;n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+ 
+     for(i=0; i&#x3c;n; i++)
+    {
+          if(a[i]%2==0){
+          	even++;
+		  }else{
+		  	odd++;
+		  }
+          
+		           
+    }
+     printf("even numbers in array: %d",even);
+     printf("\n odd numbers in array: %d",odd);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.21Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading22arr">
+					      <h5 class="mb-0">22-Array) Write a program to enter a ten elements using Array and make a summation of the numbers and average of summation</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse22arr" aria-expanded="true" aria-controls="collapse22arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse22arr" class="collapse" aria-labelledby="heading22arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr[100], n, i, sum = 0;
+	float avg;
+
+    printf("Enter the number of elements you want to insert : ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++)
+    {
+        printf("Enter element %d : ", i + 1);
+        scanf("%d", &Arr[i]);
+        sum += Arr[i];
+    }
+
+    printf("\nThe sum of the array is : %d", sum);
+    avg = sum/n;
+    printf("\nThe average of the array is : %f", avg);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.22Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading23arr">
+					      <h5 class="mb-0">23-Array) Write a program to find out the max number from given 10 elements of array</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse23arr" aria-expanded="true" aria-controls="collapse23arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse23arr" class="collapse" aria-labelledby="heading23arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr[100], n, i,maxnum;
+	
+
+    printf("Enter the number of elements you want to insert : ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++)
+    {
+        printf("Enter element %d : ", i + 1);
+        scanf("%d", &Arr[i]);        
+    }
+    maxnum = Arr[0];
+	for(i=0;i<=n;i++){
+		if(Arr[i] > maxnum){
+			maxnum = Arr[i];
+		}
+	}
+    printf("\nThe sum of the array is : %d", maxnum);
+    
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.23Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading24arr">
+					      <h5 class="mb-0">24-Array) Write a program to sort the array of 5 elements</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse24arr" aria-expanded="true" aria-controls="collapse24arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse24arr" class="collapse" aria-labelledby="heading24arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr1[20],i,j,a, n;	
+
+    printf("Enter number of elements in an array: ");
+   scanf(" %d", &n);
+   printf("\nEnter the %d elements \n",n);
+   for (i = 0; i < n; ++i)
+      scanf(" %d", &Arr1[i]);
+   for (i = 0; i < n; ++i){
+      for (j = i + 1; j < n; ++j){
+         if (Arr1[i] > Arr1[j]){
+            a = Arr1[i];
+            Arr1[i] = Arr1[j];
+            Arr1[j] = a;
+         }
+      }
+   }
+   printf("The numbers in ascending order is:\n");
+   for (i = 0; i < n; ++i){
+      printf(" %d\n", Arr1[i]);
+   }
+		
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.24Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading25arr">
+					      <h5 class="mb-0">25-Array)  Write a program to find out the second smallest number from the array.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse25arr" aria-expanded="true" aria-controls="collapse25arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse25arr" class="collapse" aria-labelledby="heading25arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int n,i,min,second_min;
+	printf("\nEnter the number of elements : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("\nInput the %d array elements :\n",n);
+	for(i = 0; i < n; i++)
+	{
+	scanf("%d",&arr[i]);
+	}
+	
+	if (n < 2)
+	{
+	printf("\nInvalid Input");
+	}
+	for(i = 0; i < n; i++)
+	{
+	if(arr[i] < min)
+	{
+	second_min = min;
+	min = arr[i];
+	}
+	}
+	for(i = 0; i < n; i++)
+	{
+	if(arr[i] < second_min && arr[i] != min)
+	{
+	second_min = arr[i];
+	}
+	}
+	
+	
+	printf("\nThe second smallest element is: %d \n", second_min);
+	return 0;		
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.25Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading26arr">
+					      <h5 class="mb-0">26-Array) Write a Program of find the element of given position from the array</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse26arr" aria-expanded="true" aria-controls="collapse26arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse26arr" class="collapse" aria-labelledby="heading26arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int a[100],i,j,n;
+
+   printf("Enter array size [1-100]: ");
+   scanf("%d", &n);
+
+   printf("Enter %d array elements: \n",n);
+   for(i=0; i&#x3c;n; i++){
+   	scanf("%d", &a[i]);
+   }
+ 
+	printf("Enter position to search element: ");
+   	scanf("%d",&j);
+   	for(i=0;i&#x3c;n;i++){   		
+   		if(j==i+1){
+   			printf("On position of %d element is: %d ",j,a[i]);
+		   }
+	   }	   
+	  if(j>n){
+	  	printf("%d is out of index",j);	
+	  }
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.26Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading27arr">
+					      <h5 class="mb-0">27-Array) Write a program to print the Matrix using 2-D Array</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse27arr" aria-expanded="true" aria-controls="collapse27arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse27arr" class="collapse" aria-labelledby="heading27arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr[3][3],i,j;	
+
+    for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j ");
+			scanf("%d", &Arr[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr[i][j]);	
+			}
+			printf("\n");
+		}
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.27Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading28arr">
+					      <h5 class="mb-0">28-Array) Write a program of two make Addition of two matrix using 2-D Array.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse28arr" aria-expanded="true" aria-controls="collapse28arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse28arr" class="collapse" aria-labelledby="heading28arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr1[3][3],i,j, Arr2[3][3],sumarr[3][3];	
+
+    for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for first Matrix ");
+			scanf("%d", &Arr1[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr1[i][j]);	
+			}
+			printf("\n");
+		}
+		
+	for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for Second Matrix ");
+			scanf("%d", &Arr2[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr2[i][j]);	
+			}
+			printf("\n");
+		}
+		printf("\nSum of two Matrix is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				sumarr[i][j]=Arr1[i][j]+Arr2[i][j];
+				printf(" %d ",sumarr[i][j]);
+			}
+			printf("\n");
+			
+		}
+
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.28Arr.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading29arr">
+					      <h5 class="mb-0">29-Array) Write a program of two make Subtraction of two matrix using 2-D Array.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse29arr" aria-expanded="true" aria-controls="collapse29arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse29arr" class="collapse" aria-labelledby="heading29arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr1[3][3],i,j, Arr2[3][3],subarr[3][3];	
+
+    for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for first Matrix ");
+			scanf("%d", &Arr1[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr1[i][j]);	
+			}
+			printf("\n");
+		}
+		
+	for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for Second Matrix ");
+			scanf("%d", &Arr2[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr2[i][j]);	
+			}
+			printf("\n");
+		}
+		printf("\nSubtraction of two Matrix is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				subarr[i][j]=Arr1[i][j]-Arr2[i][j];
+				printf(" %d ",subarr[i][j]);
+			}
+			printf("\n");
+			
+		}
+
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.29Arr.png">
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="card">
+					    <div class="card-header" id="heading30arr">
+					      <h5 class="mb-0">30-Array) Write a program of Multiplication of two matrix using 2-D Array.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse30arr" aria-expanded="true" aria-controls="collapse30arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse30arr" class="collapse" aria-labelledby="heading30arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr1[3][3],i,j, Arr2[3][3],multarr[3][3];	
+
+    for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for first Matrix ");
+			scanf("%d", &Arr1[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr1[i][j]);	
+			}
+			printf("\n");
+		}
+		
+	for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for Second Matrix ");
+			scanf("%d", &Arr2[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr2[i][j]);	
+			}
+			printf("\n");
+		}
+		printf("\nMultiplication of two Matrix is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				multarr[i][j]=Arr1[i][j]*Arr2[i][j];
+				printf(" %d ",multarr[i][j]);
+			}
+			printf("\n");
+			
+		}
+
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.30Arr.png">
+					      </div>
+					    </div>
+					  </div> 
+					  <div class="card">
+					    <div class="card-header" id="heading31arr">
+					      <h5 class="mb-0">31-Array) Write a program to find out the Max number from given Matrix</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse31arr" aria-expanded="true" aria-controls="collapse31arr">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse31arr" class="collapse" aria-labelledby="heading31arr" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){
+	int Arr1[3][3],i,j,maxnum;	
+
+    for (i = 0; i < 3; i++)
+    {  	for(j=0;j<3;j++){
+			printf("Enter the value of i and j for first Matrix ");
+			scanf("%d", &Arr1[i][j]);
+		}
+    }
+printf("\nMatrix of Given Value is:\n");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+			printf("%d ",Arr1[i][j]);	
+			}
+			printf("\n");
+		}
+		maxnum = Arr1[0][0];
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				if(Arr1[i][j] > maxnum){
+					maxnum = Arr1[i][j];					
+				}
+			}
+		}
+		printf("Maximum element in the matrix is: %d\n", maxnum);
+		
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.31Arr.png">
+					      </div>
+					    </div>
+					  </div> 
+					  <div class="card">
+					    <div class="card-header" id="heading32">
+					      <h5 class="mb-0">32) Write a program to convert the string from uppercase to lowercase and vice versa</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse32" aria-expanded="true" aria-controls="collapse32">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse32" class="collapse" aria-labelledby="heading32" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){	
+		char s[100];
+		int i;
+		printf("\nEnter a string : ");
+		gets(s);
+		
+		for (i = 0; s[i]!='\0'; i++) {
+		  if(s[i] >= 'a' && s[i] <= 'z') {
+		     s[i] = s[i] - 32;
+		  }else if(s[i] >= 'A' && s[i] <= 'Z') {
+	         s[i] = s[i] + 32;
+	      }
+		}
+		printf("\nString in Upper/Lower Case is = %s", s);
+		return 0;
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.32.png">
+					      </div>
+					    </div>
+					  </div> 
+					  <div class="card">
+					    <div class="card-header" id="heading33">
+					      <h5 class="mb-0">33) Write a program to find out the length of given string without using string function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse33" aria-expanded="true" aria-controls="collapse33">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse33" class="collapse" aria-labelledby="heading33" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){	
+		char s[100];
+		int i,length = 0;
+		printf("\nEnter a string : ");
+		gets(s);
+		
+		for (i = 0; s[i]!='\0'; i++) {
+		  length++;
+		}
+		printf("\nLength of string is = %d", length);
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.33.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading34">
+					      <h5 class="mb-0">34) write a program to count the total number of word from given string without using string function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse34" aria-expanded="true" aria-controls="collapse34">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse34" class="collapse" aria-labelledby="heading34" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){	
+		char s[100];
+		int i,count = 0;
+		printf("\nEnter a string : ");
+		scanf("%[^\n]s", s);
+		
+		for (i = 0; s[i]!='\0'; i++) {
+			if (s[i] == ' ' && s[i+1] != ' '){
+				count++;	
+			}		  
+		}
+		printf("\nTotal Words in string is = %d", count+1);
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.34.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading35">
+					      <h5 class="mb-0">35) Write a program to copy string from one string to another string without using string function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse35" aria-expanded="true" aria-controls="collapse35">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse35" class="collapse" aria-labelledby="heading35" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){	
+		char inputstr[100],copystr[100];
+		int i;
+		printf("\nEnter a string : ");
+		gets(inputstr);
+		
+		for (i = 0; inputstr[i]!='\0'; i++) {
+			
+				copystr[i] = inputstr[i];	
+				  
+		}
+		copystr[i] = '\0';
+		
+		printf("\nCopied string = %s", copystr);
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.35.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading36">
+					      <h5 class="mb-0">36) Write a program to make string reverse and check the given string is palindrome or not without using string function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse36" aria-expanded="true" aria-controls="collapse36">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse36" class="collapse" aria-labelledby="heading36" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+main(){	
+		char s[1000];  
+	    int i,n,c=0,len,temp;
+	 
+	    printf("Enter  the string : ");
+	    gets(s);
+	    n=strlen(s);
+	 	len = strlen(s);
+	 	for (i = 0; i < len/2; i++){ 		  
+		   temp = s[i]; 
+		   s[i] = s[len - i - 1]; 
+		   s[len - i - 1] = temp; 
+		  } 
+		  printf ("After reversing the string: %s \n", s);
+		  
+	    for(i=0;i&#x3c;n/2;i++){
+	    	if(s[i]==s[n-i-1]){	    		
+	    	c++;
+			}	    		 
+	 	}
+	 	
+	 	if(c==i){
+	 		 printf("string is palindrome");
+		 }else{
+	    	printf("string is not palindrome");	
+		}
+	        
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.36.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading37">
+					      <h5 class="mb-0">37) Write a program co concatenate the two string without using string function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse37" aria-expanded="true" aria-controls="collapse37">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse37" class="collapse" aria-labelledby="heading37" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+ main(){	
+		
+    char str1[100], str2[100],str3[100];   
+    int i = 0, j = 0;
+  
+    printf("\nFirst string: %s", str1);
+    gets(str1);
+    printf("\nSecond string: %s", str2);  
+    gets(str2);
+    for(i=0;str1[i] != '\0';i++){
+    	str3[j] = str1[i];
+        j++;
+	}
+
+    for(i=0;str2[i] != '\0';i++){
+    	str3[j] = str2[i];
+        j++;
+	}
+
+    str3[j] = '\0';  
+    
+    printf("\nConcatenated string: %s", str3);	        
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.37.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading38">
+					      <h5 class="mb-0">38) Write a program to perform addition, subtraction, multiplication and division of two numbers using Function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse38" aria-expanded="true" aria-controls="collapse38">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse38" class="collapse" aria-labelledby="heading38" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	int add(int n1, int n2);
+	int subtract(int n1, int n2);
+	int multiply(int n1, int n2);
+	int divide(int n1, int n2);
+	
+	// main function
+int main(){
+		int num1, num2;
+
+	  printf("Enter two numbers: ");
+	  scanf("%d %d", &num1, &num2);
+	
+	  printf("Addition \n%d + %d = %d\n", num1, num2, add(num1, num2));
+	  printf("Subtraction \n%d - %d = %d\n", num1, num2, subtract(num1, num2));
+	  printf("Multiplication \n%d * %d = %d\n", num1, num2, multiply(num1, num2));
+	  printf("Division \n%d / %d = %d\n", num1, num2, divide(num1, num2));
+	
+	  return 0;
+	}
+	
+	// function to add two integer numbers
+	int add(int n1, int n2)
+	{
+	  int result;
+	  result = n1 + n2;
+	  return result;
+	}
+	
+	// function to subtract two integer numbers
+	int subtract(int n1, int n2)
+	{
+	  int result;
+	  result = n1 - n2;
+	  return result;
+	}
+	
+	// function to multiply two integer numbers
+	int multiply(int n1, int n2)
+	{
+	  int result;
+	  result = n1 * n2;
+	  return result;
+	}
+	
+	// function to divide two integer numbers
+	int divide(int n1, int n2)
+	{
+	  int result;
+	  result = n1 / n2;
+	  return result;
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.38.png">
+					      </div>
+					    </div>
+					  </div> 
+					  <div class="card">
+					    <div class="card-header" id="heading39">
+					      <h5 class="mb-0">39) write a program to find out the Square and cube of given number using function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse39" aria-expanded="true" aria-controls="collapse39">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse39" class="collapse" aria-labelledby="heading39" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	int square(int n1);
+	int cube(int n1);
+	
+	// main function
+int main(){	
+	int n;
+	printf("Enter the value: ");
+	scanf("%d",&n);
+	square(n);
+	cube(n);
+	  return 0;
+	}
+	// function to square of integer numbers
+	int square(int n1)
+	{
+	  int result;
+	  result = n1 * n1;
+	  printf("Square of %d is %d * %d = %d",n1, n1 ,n1,result);
+	  return result;
+	}
+		// function to Qube of integer numbers
+	int cube(int n1)
+	{
+	  int result;
+	  result = n1 * n1 * n1;
+	  printf("\nQube of %d is %d * %d * %d = %d",n1,n1,n1,n1,result);
+	  return result;
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.39.png">
+					      </div>
+					    </div>
+					  </div>  
+					  <div class="card">
+					    <div class="card-header" id="heading40">
+					      <h5 class="mb-0">40) Write a program to find out the factorial of given number using function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse40" aria-expanded="true" aria-controls="collapse40">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse40" class="collapse" aria-labelledby="heading40" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	int factorial();
+	
+	// main function
+int main(){	
+	int n;
+	
+	factorial(n);
+	  return 0;
+	}
+	
+	int factorial()
+	{
+	int a,n,fact;
+	printf("Enter the value: ");
+	scanf("%d",&n);
+	fact=a=1;
+	for(a;a<=n;a++){
+		fact = fact * a;
+	}
+	printf("Factorial is: %d",fact);
+	return fact;
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.40.png">
+					      </div>
+					    </div>
+					  </div> 
+					  <div class="card">
+					    <div class="card-header" id="heading41">
+					      <h5 class="mb-0">41) write a program to print the Fibonacci series using function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse41" aria-expanded="true" aria-controls="collapse41">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse41" class="collapse" aria-labelledby="heading41" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	int fibonacci();
+	
+	// main function
+int main(){	
+	int n;
+	
+	fibonacci(n);
+	return 0;
+	}
+	
+	int fibonacci()
+	{
+	int a1=0,a2=1,a3,n;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);	
+	printf("Fibonacci Series up to %d is: \n",n);
+	printf("%d %d",a1,a2);
+	for(a3;a3<=n;a3++){
+		a3=a1+a2;
+		 printf(" %d",a3);
+		 a1=a2; 
+		 a2=a3; 
+		 a3++;
+	}
+	return a3;
+	}	
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.41.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading42">
+					      <h5 class="mb-0">42) Write a program to find out the max number from given array using function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse42" aria-expanded="true" aria-controls="collapse42">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse42" class="collapse" aria-labelledby="heading42" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	int find_maximum(int[], int);
+	
+	// main function
+int main(){	
+		int c, array[100], size, location, maximum;
+
+		printf("Input number of elements in array: ");
+		scanf("%d", &size);
+		
+		printf("Enter %d integers\n", size);
+		
+		for (c = 0; c < size; c++)
+		scanf("%d", &array[c]);
+		
+		location = find_maximum(array, size);
+		maximum  = array[location];
+		
+		printf("Maximum element location is %d and value is = %d.\n", location + 1, maximum);
+		return 0;
+	}
+	int find_maximum(int a[], int n) {
+	  int c, index = 0;
+	
+	  for (c = 1; c < n; c++)
+	    if (a[c] > a[index]){
+	    	index = c;
+		}
+	      
+	
+	  return index;
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.42.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading43">
+					      <h5 class="mb-0">43)  write a program to sort the array using function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse43" aria-expanded="true" aria-controls="collapse43">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse43" class="collapse" aria-labelledby="heading43" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	int sortingfunction(int Arr1[100], int n);
+	
+	// main function
+int main(){	
+	int Arr1[100], n;
+		sortingfunction(Arr1,n);
+	}
+	int sortingfunction(int Arr1[100], int n){
+		int i,j,a;	
+
+    	printf("Enter number of elements in an array: ");
+	   	scanf(" %d", &n);
+	   	printf("\nEnter the %d elements \n",n);
+	   	for (i = 0; i < n; ++i){
+	   		scanf(" %d", &Arr1[i]);
+		   }	      
+	   	for (i = 0; i < n; ++i){
+	      for (j = i + 1; j < n; ++j){
+	         if (Arr1[i] > Arr1[j]){
+	            a = Arr1[i];
+	            Arr1[i] = Arr1[j];
+	            Arr1[j] = a;
+	         }
+	      }
+	   }
+	   printf("The numbers in ascending order is:\n");
+	   for (i = 0; i < n; ++i){
+	      printf(" %d\n", Arr1[i]);
+	   }
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.43.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading44">
+					      <h5 class="mb-0">44)write a program to print the string in reverse order using function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse44" aria-expanded="true" aria-controls="collapse44">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse44" class="collapse" aria-labelledby="heading44" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	// functions declaration
+	char reversestrng();
+	
+	// main function
+char main(){	
+	char Arr1[100], n;
+		reversestrng();
+	}
+	char reversestrng(){
+		char s[1000];  
+	    int i,n,c=0,len,temp;
+	 
+	    printf("Enter  the string : ");
+	    gets(s);
+	    n=strlen(s);
+	 	len = strlen(s);
+	 	for (i = 0; i < len/2; i++){ 		  
+		   temp = s[i]; 
+		   s[i] = s[len - i - 1]; 
+		   s[len - i - 1] = temp; 
+		  } 
+		  printf ("After reversing the string: %s \n", s);		  
+	    
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.44.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading45">
+					      <h5 class="mb-0">45)Write a Program of Factorial using Recursive Function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse45" aria-expanded="true" aria-controls="collapse45">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse45" class="collapse" aria-labelledby="heading45" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	long int multiplyNumbers(int n);
+int main() {
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    printf("Factorial of %d is = %ld", n, multiplyNumbers(n));
+    return 0;
+}
+
+long int multiplyNumbers(int n) {
+    if (n>=1){
+    	return n*multiplyNumbers(n-1);
+	}else{
+    	return 1;
+	}
+        
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.45.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading46">
+					      <h5 class="mb-0">46)Write a Program of Print a number and check the number is palindrome or not using recursive Function</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse46" aria-expanded="true" aria-controls="collapse46">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse46" class="collapse" aria-labelledby="heading46" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	int reverse(int num);
+	int isPalindrome(int num);
+	
+	int main()
+	{
+	    int num;
+	    printf("Enter a number: ");
+	    scanf("%d", &num);
+	    if(isPalindrome(num) == 1){
+	        printf("the given number is a palindrome");
+	    }else{
+	        printf("the given number is not a palindrome number");
+	    }
+	    return 0;
+	}
+	
+	int isPalindrome(int num){
+	    if(num == reverse(num)){
+	        return 1;
+	    }
+	    return 0;
+	}
+		
+	int reverse(int num){
+	    int rem;
+	    static int sum=0;
+	    if(num!=0){
+	            rem=num%10;
+	            sum=sum*10+rem;
+	            reverse(num/10);
+	    }else{
+	        	return sum;
+			}
+	            
+	    return sum;
+	} 
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.46.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading47">
+					      <h5 class="mb-0">47)Write a Program of Make a string reverse using recursive Function.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse47" aria-expanded="true" aria-controls="collapse47">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse47" class="collapse" aria-labelledby="heading47" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+	void reverseSentence();
+	int main() {
+	    printf("Enter a sentence: ");	    
+	    reverseSentence();
+	    return 0;
+	}
+	
+	void reverseSentence() {
+	    char c;
+	    scanf("%c", &c);	    
+	    if (c != '\n') {
+	        reverseSentence();
+	        printf("%c", c);
+	    }
+	    return c;
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.47.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading48">
+					      <h5 class="mb-0">48)Write a program of structure employee that provides the following information -print and display empno,empname,address and age</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse48" aria-expanded="true" aria-controls="collapse48">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse48" class="collapse" aria-labelledby="heading48" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+struct employee{
+ char name[30],address[500];
+ int age,empid;  
+}detail[100];
+
+int main(){
+	int i,n;
+	char ch;
+ 	//struct details detail;
+ 	printf("Enter the no of Employee\n");
+	scanf("%d",&n);
+	printf("Enter the %d no of Employee details\n",n);
+	for(i=0;i&#x3c;n;i++){
+		printf("\nEmployee no %d / %d details:\n",i+1,n);
+		printf("Employee ID:\n");
+		scanf("%d",&detail[i].empid);
+		while((ch = getchar()) != '\n' && ch != EOF) { }
+		printf("Enter name:\n");
+		gets(detail[i].name);
+		while((ch = getchar()) != '\n' && ch != EOF) { }
+		printf("Enter Address:\n");
+		gets(detail[i].address);
+		printf("Enter age:\n");
+		scanf("%d",&detail[i].age);				
+	}
+	printf("\n\nPrinted Employee Details as below\n");
+	for(i=0;i&#x3c;n;i++){
+		printf("\nEmployee no %d Detail: \n\n",i+1);		
+		printf("Employee ID : %d \n",detail[i].empid);
+		printf("Name of the Employee : %s \n",detail[i].name);
+		printf("Address of the Employee : %s \n",detail[i].address);	
+		printf("Age of the Employee : %d \n\n",detail[i].age);	
+	} 
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.48.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading49">
+					      <h5 class="mb-0">49) Write a program of structure for five employee that provides the following information -print and display empno,empname,address and age</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse49" aria-expanded="true" aria-controls="collapse49">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse49" class="collapse" aria-labelledby="heading49" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+struct employee{
+ char name[30],address[500];
+ int age,empid;  
+}detail[100];
+
+int main(){
+	int i,n=5;
+	char ch;
+ 	//struct details detail;
+ 	
+	printf("Enter the %d no of Employee details\n",n);
+	for(i=0;i&#x3c;n;i++){
+		printf("\nEmployee no %d / %d details:\n",i+1,n);
+		printf("Employee ID:\n");
+		scanf("%d",&detail[i].empid);
+		while((ch = getchar()) != '\n' && ch != EOF) { }
+		printf("Enter name:\n");
+		gets(detail[i].name);
+		while((ch = getchar()) != '\n' && ch != EOF) { }
+		printf("Enter Address:\n");
+		gets(detail[i].address);
+		printf("Enter age:\n");
+		scanf("%d",&detail[i].age);				
+	}
+	printf("\n\nPrinted Employee Details as below\n");
+	for(i=0;i&#x3c;n;i++){
+		printf("\nEmployee no %d Detail: \n\n",i+1);		
+		printf("Employee ID : %d \n",detail[i].empid);
+		printf("Name of the Employee : %s \n",detail[i].name);
+		printf("Address of the Employee : %s \n",detail[i].address);	
+		printf("Age of the Employee : %d \n\n",detail[i].age);	
+	} 
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.49.1.png">
+					        <img class="img-fluid" src="images/c/Module-1.49.2.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading50">
+					      <h5 class="mb-0">50) Describe the structure student having rollno and marks of three subjects of five students. -Write a program to print all the information and total marks and percentage of each student.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse50" aria-expanded="true" aria-controls="collapse50">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse50" class="collapse" aria-labelledby="heading50" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+struct student{ 
+ int rollno, Eng, Guj, Hindi,sum,percent,outof;  
+ 
+}studentresult[100];
+
+int main(){
+	int i,n, Eng, Guj, Hindi,outof=300;
+	
+	//char ch;
+ 	//struct details detail; 	
+	printf("Enter the %d no of Student details\n",n);
+	scanf("%d",&n);
+	for(i=0;i&#x3c;n;i++){
+		printf("\nStudent roll no %d / %d details:\n",i+1,n);
+		printf("Student Roll no: ");
+		scanf("%d",&studentresult[i].rollno);
+		printf("\nEng :");
+		scanf("%d",&studentresult[i].Eng);
+		printf("\nGuj: ");
+		scanf("%d",&studentresult[i].Guj);
+		printf("\nHindi: ");
+		scanf("%d",&studentresult[i].Hindi);					
+	}
+	printf("\n\nPrinted Student Details as below\n");
+	for(i=0;i&#x3c;n;i++){
+		printf("\nStudent roll no %d Detail: \n\n",i+1);		
+		printf("Student Roll no : %d \n",studentresult[i].rollno);
+		printf("\nEng : %d \n",studentresult[i].Eng);
+		printf("Guj : %d \n",studentresult[i].Guj);
+		printf("Hindi : %d \n",studentresult[i].Hindi);
+		studentresult[i].sum=(studentresult[i].Eng + studentresult[i].Guj + studentresult[i].Hindi);
+		printf("Total marks : %d \n",studentresult[i].sum);
+		studentresult[i].percent=(studentresult[i].sum * 100) / outof;
+		printf("Percentage : %d \n",studentresult[i].percent);
+			
+	}
+ 
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.50.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading51">
+					      <h5 class="mb-0">51) Write program to make a addition of two number using pointer</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse51" aria-expanded="true" aria-controls="collapse51">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse51" class="collapse" aria-labelledby="heading51" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+int main(){
+	int n1,n2,*p,*q,sum;
+	
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	printf("\nEnter the value of n2: ");
+	scanf("%d",&n2);	
+	
+	p = &n1;
+	q = &n2;
+	sum = *p + *q;
+	printf("\nSum of %d and %d is: %d",n1,n2,sum);	 
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.51.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading52">
+					      <h5 class="mb-0">52) write a program to swap the two numbers without using third variable using poiner</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse52" aria-expanded="true" aria-controls="collapse52">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse52" class="collapse" aria-labelledby="heading52" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+int main(){
+	int n1,n2,*ptr1,*ptr2;
+	
+	printf("Enter the value of n1: ");
+	scanf("%d",&n1);
+	printf("\nEnter the value of n2: ");
+	scanf("%d",&n2);	
+	ptr1 = &n1;
+	ptr2 = &n2;
+	*ptr1 = *ptr1 + *ptr2;
+	*ptr2 = *ptr1 - *ptr2;
+	*ptr1 = *ptr1 - *ptr2;
+	printf("\nAfter swaping of n1 = %d and n2 = %d",*ptr1,*ptr2);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.52.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading53">
+					      <h5 class="mb-0">53) Write a program to concatenate the tow string using pointer.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse53" aria-expanded="true" aria-controls="collapse53">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse53" class="collapse" aria-labelledby="heading53" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+int main(){
+    char str1[100], str2[100];
+
+    printf("\nEnter the first string: ");
+    gets(str1);   
+
+    printf("\nEnter the second string to be concatenated: ");
+    gets( str2);   
+
+    char *ptr1 = str1;
+    char *ptr2 = str2;
+
+    
+    while(*ptr1)  
+    {
+        ptr1++;   
+    }
+    while(*ptr2)   
+    {
+        *ptr1 = *ptr2;
+        ptr2++;
+        ptr1++;
+    }
+    *ptr1 = '\0';  
+    printf("\n\n\nThe string after concatenation is: %s ", str1);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.53.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading54">
+					      <h5 class="mb-0">54) Write a program to sort the numbers using pointer and functions</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse54" aria-expanded="true" aria-controls="collapse54">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse54" class="collapse" aria-labelledby="heading54" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+void sort(int n, int* ptr);
+	int main(){
+	    int n,i, arr[100];
+	    
+	    printf("\nEnter the no of elements: ");
+	    scanf("%d",&n);
+	    printf("\nEnter the %d no of elements: \n",n);
+	    for (i = 0; i < n; i++){
+	    	scanf("%d",&arr[i]);
+		}
+	    
+	    sort(n, arr);
+	  
+	    return 0;
+	}
+	void sort(int n, int* ptr){
+	    int i, j, t;
+	    // Sort the numbers using pointers
+	    for (i = 0; i < n; i++) {
+	  
+	        for (j = i + 1; j < n; j++) {
+	  
+	            if (*(ptr + j) < *(ptr + i)) {
+	  
+	                t = *(ptr + i);
+	                *(ptr + i) = *(ptr + j);
+	                *(ptr + j) = t;
+	            }
+	        }
+	    }
+	  
+	    // print the numbers
+	    printf("\nSort listed number is : ");
+	    for (i = 0; i < n; i++){
+	    	printf("%d ", *(ptr + i));
+		}        
+	}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.54.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading55">
+					      <h5 class="mb-0">55) Write a program of singly link list (Using Dynamic Memory Allocation),
+					      	<br>-To add The elements in link list
+					      	<br>- To Remove the elements from link list
+					      	<br>-To display the element from the link list</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse55" aria-expanded="true" aria-controls="collapse55">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse55" class="collapse" aria-labelledby="heading55" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+#include &#x3c;stdlib.h&#x3e;
+// Create a node
+struct Node {
+  int data;
+  struct Node* next;
+};
+
+void insertAtBeginning(struct Node** head_ref, int new_data);
+void insertAfter(struct Node* prev_node, int new_data);
+void insertAtEnd(struct Node** head_ref, int new_data);
+void deleteNode(struct Node** head_ref, int key);
+int searchNode(struct Node** head_ref, int key);
+void sortLinkedList(struct Node** head_ref);
+void printList(struct Node* node);
+
+int main() {
+  struct Node* head = NULL;
+
+  insertAtEnd(&head, 1);
+  insertAtBeginning(&head, 2);
+  insertAtBeginning(&head, 3);
+  insertAtEnd(&head, 4);
+  insertAfter(head->next, 5);
+
+  printf("Linked list: ");
+  printList(head);
+
+  printf("\nAfter deleting an element: ");
+  deleteNode(&head, 3);
+  printList(head);
+
+  int item_to_find = 3;
+  if (searchNode(&head, item_to_find)) {
+  printf("\n%d is found", item_to_find);
+  } else {
+  printf("\n%d is not found", item_to_find);
+  }
+
+  sortLinkedList(&head);
+  printf("\nSorted List: ");
+  printList(head);
+}
+
+// Insert at the beginning
+void insertAtBeginning(struct Node** head_ref, int new_data) {
+  // Allocate memory to a node
+  struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+
+  // insert the data
+  new_node->data = new_data;
+
+  new_node->next = (*head_ref);
+
+  // Move head to new node
+  (*head_ref) = new_node;
+}
+
+// Insert a node after a node
+void insertAfter(struct Node* prev_node, int new_data) {
+  if (prev_node == NULL) {
+  printf("the given previous node cannot be NULL");
+  return;
+  }
+
+  struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+  new_node->data = new_data;
+  new_node->next = prev_node->next;
+  prev_node->next = new_node;
+}
+
+// Insert the the end
+void insertAtEnd(struct Node** head_ref, int new_data) {
+  struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+  struct Node* last = *head_ref; /* used in step 5*/
+
+  new_node->data = new_data;
+  new_node->next = NULL;
+
+  if (*head_ref == NULL) {
+  *head_ref = new_node;
+  return;
+  }
+
+  while (last->next != NULL) last = last->next;
+
+  last->next = new_node;
+  return;
+}
+
+// Delete a node
+void deleteNode(struct Node** head_ref, int key) {
+  struct Node *temp = *head_ref, *prev;
+
+  if (temp != NULL && temp->data == key) {
+  *head_ref = temp->next;
+  free(temp);
+  return;
+  }
+  // Find the key to be deleted
+  while (temp != NULL && temp->data != key) {
+  prev = temp;
+  temp = temp->next;
+  }
+
+  // If the key is not present
+  if (temp == NULL) return;
+
+  // Remove the node
+  prev->next = temp->next;
+
+  free(temp);
+}
+
+// Search a node
+int searchNode(struct Node** head_ref, int key) {
+  struct Node* current = *head_ref;
+
+  while (current != NULL) {
+  if (current->data == key) return 1;
+  current = current->next;
+  }
+  return 0;
+}
+
+// Sort the linked list
+void sortLinkedList(struct Node** head_ref) {
+  struct Node *current = *head_ref, *index = NULL;
+  int temp;
+
+  if (head_ref == NULL) {
+  return;
+  } else {
+  while (current != NULL) {
+    // index points to the node next to current
+    index = current->next;
+
+    while (index != NULL) {
+    if (current->data > index->data) {
+      temp = current->data;
+      current->data = index->data;
+      index->data = temp;
+    }
+    index = index->next;
+    }
+    current = current->next;
+  }
+  }
+}
+
+// Print the linked list
+void printList(struct Node* node) {
+  while (node != NULL) {
+  printf(" %d ", node->data);
+  node = node->next;
+  }
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.55.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading56">
+					      <h5 class="mb-0">56) Write a program to write data in file.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse56" aria-expanded="true" aria-controls="collapse56">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse56" class="collapse" aria-labelledby="heading56" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+#include &#x3c;stdlib.h&#x3e;
+#define DATA_SIZE 1000
+
+int main()
+{    
+    char data[DATA_SIZE];
+    
+    FILE * fPtr;
+    
+    fPtr = fopen("file1.txt", "w");
+    
+    if(fPtr == NULL)
+    {        
+        printf("Unable to create file.\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    printf("Enter contents to store in file : \n");
+    fgets(data, DATA_SIZE, stdin);
+    
+    fputs(data, fPtr);
+
+    fclose(fPtr);
+
+    printf("File created and saved successfully. :) \n");
+
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.56.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading56-1">
+					      <h5 class="mb-0">56.1) Write a program to read data from file.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse56-1" aria-expanded="true" aria-controls="collapse56-1">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse56-1" class="collapse" aria-labelledby="heading56-1" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+#include &#x3c;stdlib.h&#x3e;
+#define DATA_SIZE 1000
+
+int main()
+{    
+    char data[DATA_SIZE];
+    
+    FILE * fPtr;
+    printf("Data from the file1 is: \n");
+    fPtr = fopen("file1.txt", "r");
+    if( fgets (data, DATA_SIZE, fPtr)!=EOF ){
+    	  puts(data);  	
+	}
+	fclose(fPtr);
+	return(0);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.56.1.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading57">
+					      <h5 class="mb-0">57) Write a program to read and write data from the file.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse57" aria-expanded="true" aria-controls="collapse57">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse57" class="collapse" aria-labelledby="heading57" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+#include &#x3c;stdlib.h&#x3e;
+#define DATA_SIZE 1000
+
+int main()
+{    
+    char data[DATA_SIZE];
+    
+    FILE * fPtr;
+    
+    fPtr = fopen("file2.txt", "w");
+    
+    if(fPtr == NULL)
+    {        
+        printf("Unable to create file.\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    printf("Enter contents to store in file : \n");
+    fgets(data, DATA_SIZE, stdin);
+    
+    fputs(data, fPtr);
+
+    fclose(fPtr);
+
+    printf("File created and saved successfully. :) \n");
+    
+    printf("\nData from the file1 is: \n");
+    fPtr = fopen("file2xt", "r");
+    if( fgets (data, DATA_SIZE, fPtr)!=EOF ){
+    	  puts(data);  	
+	}
+	fclose(fPtr);
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.57.png">
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="heading58">
+					      <h5 class="mb-0">58) Write a program to append data into already existed file.</h5>
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse58" aria-expanded="true" aria-controls="collapse58">
+					          <span>&#x2039;</span>
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapse58" class="collapse" aria-labelledby="heading58" data-parent="#accordion">
+					      <div class="card-body">
+<div class="writtencode">
+<pre>
+<code>
+#include &#x3c;stdio.h&#x3e;
+#include &#x3c;string.h&#x3e;
+int main()
+{
+   FILE *fp;
+   char str[80];
+ 
+   fp = fopen("appenddata.txt", "a");
+ 
+   printf("Enter your message:");
+   gets(str);
+ 
+   fprintf(fp, "%s ",str);
+ 
+   printf("Your message is appended in appenddata.txt file.");
+   fclose(fp);   
+   return 0;
+}
+</code>
+</pre>
+</div>
+					        <img class="img-fluid" src="images/c/Module-1.58.png">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center">
+			<h3>Thank You!</h3>
+		</div>
+	</div>
+</section>
+
+
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

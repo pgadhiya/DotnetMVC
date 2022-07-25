@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>.Net MVC</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <div class="gotoTopo">
+         <a href="#home">&#x21e7;</a>
+      </div>
+      <section>
+         <nav class="navbar navbar-expand-lg fixed-top navbar-sticky">
+            <a class="navbar-brand" href="index.html">Tops Assignments</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon lines">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">C Programme <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="cpl.html">C++ Programme <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="mvc_net.html">.Net MVC <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="Data-Table-Desription.html">Data-Table-Desription <span class="sr-only">(current)</span></a>
+                  </li> 
+               </ul>
+            </div>
+         </nav>
+      </section>
+      <section class="pagetoppag" id="home">
+         <div class="container">
+            <div class="modulemainblock">
+                     <div class="row">
+                        <div class="col-12 text-center">
+                           <div class="modulemainheader">
+                              <h1 class="mb-0">Data Table Description</h1>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div id="accordion1" class="module1Cprogramacc">
+                              <div class="card">
+                                 <div class="card-header" id="heading1">
+                                    <h5 class="mb-0">1)  Admin Table</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      AD_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      User ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      F_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      User First Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      3
+                                                   </td>
+                                                   <td>
+                                                      L_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      User Last Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      4
+                                                   </td>
+                                                   <td>
+                                                      E_mail
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      User Email 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      5
+                                                   </td>
+                                                   <td>
+                                                      Password
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      User Login Password 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading2">
+                                    <h5 class="mb-0">2)  Faculty</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      F_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      Faculty ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      F_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Faculty First Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      3
+                                                   </td>
+                                                   <td>
+                                                      L_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Faculty Last Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      4
+                                                   </td>
+                                                   <td>
+                                                      E_mail
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Faculty Email 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      5
+                                                   </td>
+                                                   <td>
+                                                      Password
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Faculty Login Password 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading3">
+                                    <h5 class="mb-0">3)  Student</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      S_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      Student ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      F_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Student First Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      3
+                                                   </td>
+                                                   <td>
+                                                      L_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Student Last Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      4
+                                                   </td>
+                                                   <td>
+                                                      E_mail
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Student Email 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      5
+                                                   </td>
+                                                   <td>
+                                                      Password
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Student Login Password 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      6
+                                                   </td>
+                                                   <td>
+                                                      Address
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Student Address 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      7
+                                                   </td>
+                                                   <td>
+                                                      ST_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      FOREIGN KEY 
+                                                   </td>
+                                                   <td>
+                                                      State ID from State Table 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      8
+                                                   </td>
+                                                   <td>
+                                                      CT_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      FOREIGN KEY 
+                                                   </td>
+                                                   <td>
+                                                      City ID from City Table 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      9
+                                                   </td>
+                                                   <td>
+                                                      Mobile
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      Student Mobile no 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      10
+                                                   </td>
+                                                   <td>
+                                                      Status
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      Student course status Rinning / Completed  
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading4">
+                                    <h5 class="mb-0"> 4)  Batch</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      B_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      Batch ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      B_Name
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL
+                                                   </td>
+                                                   <td>
+                                                      Batch Name 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      3
+                                                   </td>
+                                                   <td>
+                                                      F_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      FOREIGN KEY 
+                                                   </td>
+                                                   <td>
+                                                      Faculty ID from Faculty Table 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      4
+                                                   </td>
+                                                   <td>
+                                                      B_ST_DATE
+                                                   </td>
+                                                   <td>
+                                                      Datetime
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      Batch Start Date 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      4
+                                                   </td>
+                                                   <td>
+                                                      B_CR_DATE
+                                                   </td>
+                                                   <td>
+                                                      Datetime
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      Batch Creation Date 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      10
+                                                   </td>
+                                                   <td>
+                                                      Status
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      Batch status Rinning / Completed  
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading5">
+                                    <h5 class="mb-0"> 5)  Batch - Details</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      BD_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      Batch Detail ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      B_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      FOREIGN KEY 
+                                                   </td>
+                                                   <td>
+                                                      Batch ID from Batch Table 
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      3
+                                                   </td>
+                                                   <td>
+                                                      S_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      FOREIGN KEY 
+                                                   </td>
+                                                   <td>
+                                                      Student ID from Student Table 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading6">
+                                    <h5 class="mb-0"> 6)  States</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      ST_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      State ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      Satename
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      State Name 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading7">
+                                    <h5 class="mb-0"> 7)  City</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion1">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      Sr. No.
+                                                   </th>
+                                                   <th>
+                                                      Field Name
+                                                   </th>
+                                                   <th>
+                                                      Data Type (Size)
+                                                   </th>
+                                                   <th>
+                                                      Constraints
+                                                   </th>
+                                                   <th>
+                                                      Description
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>                                                
+                                                <tr>
+                                                   <td>
+                                                      1
+                                                   </td>
+                                                   <td>
+                                                      CT_ID
+                                                   </td>
+                                                   <td>
+                                                      int
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL, PRIMARY KEY, AUTO_INCREMENT
+                                                   </td>
+                                                   <td>
+                                                      City ID
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      2
+                                                   </td>
+                                                   <td>
+                                                      Cityname
+                                                   </td>
+                                                   <td>
+                                                      varchar(50)
+                                                   </td>
+                                                   <td>
+                                                      NOT NULL 
+                                                   </td>
+                                                   <td>
+                                                      City Name 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            <div class="text-center">
+               <h3>Thank You!</h3>
+            </div>
+         </div>
+      </section>
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
