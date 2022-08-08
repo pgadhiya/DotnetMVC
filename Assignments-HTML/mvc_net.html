@@ -49,6 +49,9 @@
                <li class="nav-item">
                   <a class="nav-link" id="module4-tab" data-toggle="tab" href="#module4" role="tab" aria-controls="module4" aria-selected="false">Module 4</a>
                </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="module5-tab" data-toggle="tab" href="#module5" role="tab" aria-controls="module5" aria-selected="false">Module 5</a>
+               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                <div class="tab-pane fade show active" id="module2" role="tabpanel" aria-labelledby="module2-tab">
@@ -2511,6 +2514,532 @@ protected void Button1_Click(object sender, EventArgs e)
                                           		</tr>
                                           	</tbody>
                                           </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center">
+                     <h3>Thank You!</h3>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="module5" role="tabpanel" aria-labelledby="module5-tab">
+                     <div class="modulemainblock">
+                     <div class="row">
+                        <div class="col-12 text-center">
+                           <div class="modulemainheader">
+                              <h1 class="mb-0">Module - 5</h1>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div id="accordion3" class="module1Cprogramacc">
+                              <div class="card">
+                                 <div class="card-header" id="heading52">
+                                    <h5 class="mb-0">M5.1)  Explain Areas in MVC?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link" data-toggle="collapse" data-target="#collapse52" aria-expanded="true" aria-controls="collapse52">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse52" class="collapse show" aria-labelledby="heading52" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 A MVC Application can contain several MVC structures (areas).
+                                             </li>
+                                             <li>
+                                                Areas are the small functional units with its own set of Model, View and Controller MVC Application can have any number of areas. Each area has its own controllers, models and views
+                                             </li>
+                                             <li>
+                                                 Areas are put under separate folders called areas.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading53">
+                                    <h5 class="mb-0">M5.2)  Explain Render Section in MVC?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse53" aria-expanded="true" aria-controls="collapse53">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse53" class="collapse" aria-labelledby="heading53" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 Render Section(String) In layout pages, renders the content of the section named name.
+                                             </li>
+                                             <li>
+                                                Render Section(String, Boolean) In layout pages, renders the content of the section named name.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading54">
+                                    <h5 class="mb-0">M5.3)  Which assembly is the MVC framework is defined?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse54" aria-expanded="true" aria-controls="collapse54">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse54" class="collapse" aria-labelledby="heading54" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 The MVC framework is defined through System.Web.Mvc assembly. This is because this is the only assembly which contains classes and interfaces that support the ASP.NET Model View Controller (MVC) framework for creating Web application.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading55">
+                                    <h5 class="mb-0">M5.4)  Apply validations using data annotation attributes.</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse55" aria-expanded="true" aria-controls="collapse55">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse55" class="collapse" aria-labelledby="heading55" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+<pre>
+<code>
+
+using System.ComponentModel.DataAnnotations;
+using Xunit;
+using Xunit.Sdk;
+namespace p1.Models
+{
+ public class data
+ {
+ [Required(ErrorMessage ="Enter First Name")]
+ [RegularExpression("[A-Za-z]+", ErrorMessage = "Only alphabets.!")]
+ [Display(Name = "First Name")]
+ public string F_name { get; set; }
+ [Required(ErrorMessage = "Enter Last")]
+ [RegularExpression("[a-zA-Z]+" , ErrorMessage ="only alphabets.!")]
+ [Display(Name = "Last Name")]
+ public string L_name { get; set; }
+ [Required(ErrorMessage = "Mobile no")]
+ [RegularExpression("[0-9]+",ErrorMessage ="only numbers.!")]
+ [Display(Name = "Mobile No")]
+ public int mobile { get; set; }
+ [Required(ErrorMessage = "Enter Email")]
+ [EmailAddress(ErrorMessage ="enter vaild email.!")]
+ [Display(Name = "Email")]
+ public string Email { get; set; }
+ [Required(ErrorMessage = "Select Gender")]
+ [Display(Name = "Gender")]
+ public string Gender { get; set; }
+ [Required(ErrorMessage = "Select City")]
+ [Display(Name = "City")]
+ public string City { get; set; }
+ [Required(ErrorMessage = "Select Hobbies")]
+ [Display(Name = "Hobbies")]
+ public string Hobbies { get; set; }
+ [Required(ErrorMessage = "Enter Date Of Birth")]
+ [Display(Name = "Date Of Birth")]
+ public string DOB { get; set; }
+ [Required(ErrorMessage = "Enter Address")]
+ [Display(Name = "Address")]
+ public string Address { get; set; }
+ [Required(ErrorMessage = "Uploade File")]
+ [Display(Name = "CV File")]
+ public string Files { get; set; }
+ }
+} 
+</code>
+</pre>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                               <div class="card">
+                                 <div class="card-header" id="heading56">
+                                    <h5 class="mb-0">M5.5) What is difference between javascript and jquery?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse56" aria-expanded="true" aria-controls="collapse56">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse56" class="collapse" aria-labelledby="heading56" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      JavaScript
+                                                   </th>
+                                                   <th>
+                                                      jQuery
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td>
+                                                      JavaScript is an independent language and can exist on its own.
+                                                   </td>
+                                                   <td>
+                                                      jQuery is a JavaScript library. It would not have been invented had JavaScript was not there. jQuery is still dependent on JavaScript as it has to be converted to JavaScript for the browser in-built JavaScript engine to interpret and run it.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It is a high-level interpreted client-side scripting language. This is a combination of ECMA script and DOM (Document Object Model)
+                                                   </td>
+                                                   <td>
+                                                      It is a light-weight JavaScript library. It has only the DOM
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      JavaScript uses more lines of code as we have to write our own code
+                                                   </td>
+                                                   <td>
+                                                      jQuery uses fewer lines of code than JavaScript for the same functionality as the code is already written in its library, we just have to import the library and use the relevant function/method of the library in our code.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      We can make animations in JavaScript with many lines of code. Animations are mainly done by manipulating the style of an Html page.
+                                                   </td>
+                                                   <td>
+                                                      In jQuery, we can add animation effects easily with fewer lines of code.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      JavaScript can be cumbersome for the developer as it can take a number of lines of code to attain a functionality
+                                                   </td>
+                                                   <td>
+                                                      jQuery is more user-friendly than JavaScript with few lines of code
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading57">
+                                    <h5 class="mb-0">M5.6) What is Linq?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse57" aria-expanded="true" aria-controls="collapse57">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse57" class="collapse" aria-labelledby="heading57" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                Language Integrated Query proposes a compact significant and understandable syntax for operating data. Language Integrated Query is a Microsoft programming tactic and model which effectively includes formal query abilities into Microsoft .NET programming languages.
+                                             </li>
+                                             <li>
+                                                It has a need for the presence of particular language extensions.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading58">
+                                    <h5 class="mb-0">M5.7) What is difference between Linq and Entity Framework.?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse58" aria-expanded="true" aria-controls="collapse58">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse58" class="collapse" aria-labelledby="heading58" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      LINQ to SQL
+                                                   </th>
+                                                   <th>
+                                                      Entity Framework (EF)
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td>
+                                                      It only works with SQL Server Database.
+                                                   </td>
+                                                   <td>
+                                                     It can works with various databases like Oracle, DB2, MYSQL, SQL Server etc.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It generates a .dbml to maintain the relation
+                                                   </td>
+                                                   <td>
+                                                      It generates an .edmx files initially. The relation is maintained using 3 different files .csdl, .msl and .ssdl
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It has not support for complex type.
+                                                   </td>
+                                                   <td>
+                                                      It has support for complex type.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                     It cannot generate database from model.
+                                                   </td>
+                                                   <td>
+                                                      It can generate database from model.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It allows only one to one mapping between the entity classes and the relational tables /views.
+                                                   </td>
+                                                   <td>
+                                                      It allows one-to-one, one-to-many & many-to-many mappings between the Entity classes and the relational tables /views
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading59">
+                                    <h5 class="mb-0">M5.10) What is Data Annotation Validator Attributes in MVC?
+</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse59" aria-expanded="true" aria-controls="collapse59">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse59" class="collapse" aria-labelledby="heading59" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                Data annotation attributes are attached to the properties of the model class and enforce some validation criteria. 
+                                             </li>
+                                             <li>
+                                                 They are capable of performing validation on the server side as well as on the client side. 
+                                             </li>
+                                             <li>
+                                                This article discusses the basics of using these attributes in an ASP.NET MVC application.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading60">
+                                    <h5 class="mb-0">M5.11) What are AJAX Helpers in MVC?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse60" aria-expanded="true" aria-controls="collapse60">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse60" class="collapse" aria-labelledby="heading60" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                AJAX Helpers are used to create AJAX enabled elements like as Ajax enabled forms and links which performs request asynchronously. 
+                                             </li>
+                                             <li>
+                                                 AJAX Helpers are extension methods of AJAXHelper class which exist in System. Web. Mvc namespace.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading61">
+                                    <h5 class="mb-0">M5.14) What are required attributes for Ajax call?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse61" aria-expanded="true" aria-controls="collapse61">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse61" class="collapse" aria-labelledby="heading61" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                The parameters specifies one or more name/value pairs for the AJAX request. 
+                                             </li>
+                                             <li>
+                                                 The data type expected of the server response. A function to run if the request fails.
+                                             </li>
+                                             <li>
+                                                A Boolean value specifying whether a request is only successful if the response has changed since the last request.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading62">
+                                    <h5 class="mb-0">M5.16) What is JsonResultType in MVC? </h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse62" aria-expanded="true" aria-controls="collapse62">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse62" class="collapse" aria-labelledby="heading62" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                jsonResult is one of the type of MVC action result type which returns the data back to the view or the browser in the formJof JSON (JavaScript Object notation format). 
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading63">
+                                    <h5 class="mb-0">M5.17) What is the meaning of Unobtrusive JavaScript? </h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse63" aria-expanded="true" aria-controls="collapse63">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse63" class="collapse" aria-labelledby="heading63" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                Unobtrusive JavaScript is a general term that conveys a general set of guidelines or margins to the term REST. 
+                                             </li>
+                                             <li>
+                                                REST is nothing but the Representational State Transfer.
+                                             </li>
+                                             <li>
+                                                We can explain Unobtrusive JavaScript as- it is not your particular JavaScript code that you generally use in your markup page.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading64">
+                                    <h5 class="mb-0">M5.18) What are the sub types of ActionResult? </h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse64" aria-expanded="true" aria-controls="collapse64">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse64" class="collapse" aria-labelledby="heading64" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                <b>ViewResult</b> - Renders a specified view to the response stream 
+                                             </li>
+                                             <li>
+                                                <b>PartialViewResult</b> - Renders a specified partial view to the response stream
+                                             </li>
+                                             <li>
+                                                <b>EmptyResult</b> - An empty response is returned
+                                             </li>
+                                             <li>
+                                                <b>RedirectResult</b> - Performs an HTTP redirection to a specified URL
+                                             </li>
+                                             <li>
+                                                <b>RedirectToRouteResult</b> - Performs an HTTP redirection to a URL that is determined by the routing engine, based on given route data.
+                                             </li>
+                                             <li>
+                                                <b>JsonResult</b> - Serializes a given ViewData object to JSON format
+                                             </li>
+                                             <li>
+                                                <b>JavaScriptResult</b> - Returns a piece of JavaScript code that can be executed on the client
+                                             </li>
+                                             <li>
+                                                <b>ContentResult</b> - Writes content to the response stream without requiring a view
+                                             </li>
+                                             <li>
+                                                <b>FileContentResult</b> - Returns a file to the client
+                                             </li>
+                                             <li>
+                                                <b>FileStreamResult</b> - Returns a file to the client, which is provided by a Stream
+                                             </li>
+                                             <li>
+                                                <b>FilePathResult</b> - Returns a file to the client.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading65">
+                                    <h5 class="mb-0">M5.21) Different way to return view in MVC? </h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse65" aria-expanded="true" aria-controls="collapse65">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse65" class="collapse" aria-labelledby="heading65" data-parent="#accordion3">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                               return View()
+                                             </li>
+                                             <li>
+                                                return RedirectToAction()
+                                             </li>
+                                             <li>
+                                                return Redirect()
+                                             </li>
+                                             <li>
+                                                return RedirectToRoute()
+                                             </li>
+                                          </ul>
                                        </div>
                                     </div>
                                  </div>
