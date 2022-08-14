@@ -52,6 +52,9 @@
                <li class="nav-item">
                   <a class="nav-link" id="module5-tab" data-toggle="tab" href="#module5" role="tab" aria-controls="module5" aria-selected="false">Module 5</a>
                </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="module6-tab" data-toggle="tab" href="#module6" role="tab" aria-controls="module6" aria-selected="false">Module 6</a>
+               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                <div class="tab-pane fade show active" id="module2" role="tabpanel" aria-labelledby="module2-tab">
@@ -3040,6 +3043,308 @@ namespace p1.Models
                                                 return RedirectToRoute()
                                              </li>
                                           </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center">
+                     <h3>Thank You!</h3>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="module6" role="tabpanel" aria-labelledby="module6-tab">
+                     <div class="modulemainblock">
+                     <div class="row">
+                        <div class="col-12 text-center">
+                           <div class="modulemainheader">
+                              <h1 class="mb-0">Module - 6</h1>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div id="accordion6" class="module1Cprogramacc">
+                              <div class="card">
+                                 <div class="card-header" id="heading67">
+                                    <h5 class="mb-0">M6.1)  What is Nuget & package?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link" data-toggle="collapse" data-target="#collapse67" aria-expanded="true" aria-controls="collapse67">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse67" class="collapse show" aria-labelledby="heading67" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 An essential tool for any modern development platform is a mechanism through which developers can create, share, and consume useful code. Often such code is bundled into "packages" that contain compiled code (as DLLs) along with other content needed in the projects that consume these packages.
+                                             </li>
+                                             <li>
+                                                For .NET (including .NET Core), the Microsoft-supported mechanism for sharing code is NuGet, which defines how packages for .NET are created, hosted, and consumed, and provides the tools for each of those roles.
+                                             </li>
+                                             <li>
+                                                 Put simply, a NuGet package is a single ZIP file with the .nupkg extension that contains compiled code (DLLs), other files related to that code, and a descriptive manifest that includes information like the package's version number. Developers with code to share create packages and publish them to a public or private host. Package consumers obtain those packages from suitable hosts, add them to their projects, and then call a package's functionality in their project code. NuGet itself then handles all of the intermediate details.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading68">
+                                    <h5 class="mb-0">M6.2)  What is WebService?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse68" aria-expanded="true" aria-controls="collapse68">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse68" class="collapse" aria-labelledby="heading68" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 A web service is any piece of software that makes itself available over the internet and uses a standardized XML messaging system. XML is used to encode all communications to a web service. For example, a client invokes a web service by sending an XML message, then waits for a corresponding XML response. As all communication is in XML, web services are not tied to any one operating system or programming language—Java can talk with Perl; Windows applications can talk with Unix applications.
+                                             </li>
+                                             <li>
+                                                Web services are self-contained, modular, distributed, dynamic applications that can be described, published, located, or invoked over the network to create products, processes, and supply chains. These applications can be local, distributed, or web-based. Web services are built on top of open standards such as TCP/IP, HTTP, Java, HTML, and XML.
+                                             </li>
+                                             <li>
+                                                Web services are XML-based information exchange systems that use the Internet for direct application-to-application interaction. These systems can include programs, objects, messages, or documents.
+                                             </li>
+                                             <li>
+                                                A web service is a collection of open protocols and standards used for exchanging data between applications or systems. Software applications written in various programming languages and running on various platforms can use web services to exchange data over computer networks like the Internet in a manner similar to inter-process communication on a single computer. This interoperability (e.g., between Java and Python, or Windows and Linux applications) is due to the use of open standards.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading69">
+                                    <h5 class="mb-0">M6.3)  What is request and response?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse69" aria-expanded="true" aria-controls="collapse69">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse69" class="collapse" aria-labelledby="heading69" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 The URL in MVC Application generally follows the Pattern Controller/Action/id.  This URL is automatically mapped to Action Method inside the MVC Controller.  The job of Action Method is to create the Response and send it back to the client. 
+                                             </li>
+                                             <li>
+                                                The ASP.NET MVC Request life cycle starts when the client requests for a resource. The request received from the client first goes through the Routing module.
+                                             </li>
+                                             <li>
+                                                Routing Module then passes it to the MVC Handler. MVC Handler is responsible for creating the Controller. The Controller then invokes the action method using the Action Invoker. Finally, the Result Execution takes place and the response is sent to the Clients Browser.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading70">
+                                    <h5 class="mb-0">M6.4)  What is postback?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse70" aria-expanded="true" aria-controls="collapse70">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse70" class="collapse" aria-labelledby="heading70" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 PostBack is the name given to the process of submitting an ASP.NET page to the server for processing. PostBack is done if certain credentials of the page are to be checked against some sources (such as verification of username and password using database).
+                                             </li>
+                                             <li>
+                                                This is something that a client machine is not able to accomplish and thus these details have to be 'posted back' to the server.
+                                             </li>
+                                             <li>
+                                                If we create a web Page, which consists of one or more Web Controls that are configured to use AutoPostBack (Every Web controls will have their own AutoPostBack property), the ASP.Net adds a special JavaScipt function to the rendered HTML Page. This function is named _doPostBack() . When Called, it triggers a PostBack, sending data back to the web Server.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading71">
+                                    <h5 class="mb-0">M6.5)  What is IIS?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse71" aria-expanded="true" aria-controls="collapse71">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse71" class="collapse" aria-labelledby="heading71" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 Internet Information Services (IIS) is a flexible, general-purpose web server from Microsoft that runs on Windows systems to serve requested HTML pages or files.
+                                             </li>
+                                             <li>
+                                                An IIS web server accepts requests from remote client computers and returns the appropriate response. This basic functionality allows web servers to share and deliver information across local area networks (LAN), such as corporate intranets, and wide area networks (WAN), such as the Internet.
+                                             </li>
+                                             <li>
+                                                A web server can deliver information to users in several forms, such as static webpages coded in HTML; through file exchanges as downloads and uploads; and text documents, image files and more.
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading72">
+                                    <h5 class="mb-0">M6.6)  What is web.config?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse72" aria-expanded="true" aria-controls="collapse72">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse72" class="collapse" aria-labelledby="heading72" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 A web.config file is a Windows file that lets you customize the way your site or a specific directory on your site behaves. For example, if you place a web.config file in your root directory, it will affect your entire site (www.coolexample.com).
+                                             </li>
+                                             <li>
+                                                If you place it in a /content directory, it will only affect that directory (www.coolexample.com/content). However, in order for a web.config file to register in a specific directory, there must be a web.config file in the root directory.
+                                             </li>
+                                             <li>
+                                                Creating, transforming, and publishing the web.config file is handled by an MSBuild target (_TransformWebConfig) when the project is published. This target is present in the Web SDK targets (Microsoft.NET.Sdk.Web). The SDK is set at the top of the project file:
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading73">
+                                    <h5 class="mb-0">M6.7)  Which are the type of WebService?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse73" aria-expanded="true" aria-controls="collapse73">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse73" class="collapse" aria-labelledby="heading73" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <ul>
+                                             <li>
+                                                 <h5>
+                                                    Different Types of Web Services
+                                                 </h5>
+                                                 <ol>
+                                                    <li>
+                                                       Web template.
+                                                    </li>
+                                                    <li>
+                                                       JSON-RPC.
+                                                    </li>
+                                                    <li>
+                                                      JSON-WSP. 
+                                                    </li>
+                                                    <li>
+                                                       Web Services Description Language (WSDL)
+                                                    </li>
+                                                    <li>
+                                                       Web Services Conversation Language (WSCL)
+                                                    </li>
+                                                    <li>
+                                                       Web Services Flow Language (WSFL)
+                                                    </li>
+                                                    <li>
+                                                       Web Services Metadata Exchange (WS-MetadataExchange)
+                                                    </li>
+                                                    <li>
+                                                       XML Interface for Network Services (XINS)
+                                                    </li>
+                                                 </ol>
+                                             </li>                                             
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading74">
+                                    <h5 class="mb-0">M6.8)  What is XML and Json?</h5>
+                                    <h5 class="mb-0">
+                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse74" aria-expanded="true" aria-controls="collapse74">
+                                       <span>&#x2039;</span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse74" class="collapse" aria-labelledby="heading74" data-parent="#accordion6">
+                                    <div class="card-body">
+                                       <div class="writtencode">
+                                          <table>
+                                             <thead>
+                                                <tr>
+                                                   <th>
+                                                      JSON
+                                                   </th>
+                                                   <th>
+                                                      XML
+                                                   </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td>
+                                                      It is JavaScript Object Notation
+                                                   </td>
+                                                   <td>
+                                                     It is Extensible markup language
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It is based on JavaScript language. 
+                                                   </td>
+                                                   <td>
+                                                      It is derived from SGML.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It is a way of representing objects.   
+                                                   </td>
+                                                   <td>
+                                                      It is a markup language and uses tag structure to represent data items.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                     It does not provides any support for namespaces.
+                                                   </td>
+                                                   <td>
+                                                      It supports namespaces.
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      It supports array.
+                                                   </td>
+                                                   <td>
+                                                      It doesn’t supports array.
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
                                        </div>
                                     </div>
                                  </div>
